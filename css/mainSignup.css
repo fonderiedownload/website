@@ -1,0 +1,744 @@
+body{
+  font-family: 'Zara-Regular';
+  height: 100vh;
+  top: 0px;
+  position: fixed;
+}
+
+#mobile{
+  display: none;
+}
+
+#top{
+  position: fixed;
+  width: 100%;
+  height:8vh;
+  text-align: center;
+}
+
+#bottom{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:8vh;
+  text-align: center;
+}
+
+#derriere{
+  width: 100vw;
+  /*height: 100%;*/
+  /*position: absolute;*/
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#derriere p{
+  font-size: 4vw;
+}
+
+#derriere p:first-child{
+  font-family:"Credible-Regular";
+  font-size: 5vw;
+  font-feature-settings: "ss03";
+}
+
+#derriere p:nth-child(2){
+  font-size: 3vw;
+  margin-top: 9.5vh;
+}
+
+#derriere a:hover{
+  animation: colorchangetext 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes colorchangetext{
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  75%  {color: green;}
+  100% {color: red;}
+}
+
+#devant{
+  width: 100%;
+  height: 100%;
+  z-index: 3000;
+  position: absolute;
+}
+
+#mireMiddleBottom{
+  position: fixed;
+  width: 25px;
+  bottom: 0px; left: 50%;
+  transform: translate(-50%, 0%);
+  box-sizing: border-box;
+}
+
+#mireMiddleTop{
+  position: fixed;
+  width: 25px;
+  top: 0px; left: 50%;
+  transform: translate(-50%, 0%);
+  box-sizing: border-box;
+}
+
+#button_download:hover{
+  border-radius:0;
+  cursor: pointer;
+  width: 350px;
+  margin: auto;
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.picto{
+  display: block;
+}
+
+.text {
+  color: black;
+  opacity: 0;
+  text-align: center;
+  padding-top:0px;
+  transition: all 0s linear;
+  transition: margin-right .3s ease-in-out;
+  font-size: 25px;
+  font-family: "Credible-Regular";
+  margin-right: -500px;
+  padding-top: 23px;
+  animation-delay: 0.1s;
+}
+
+#button_download:hover .picto {
+  display: none;
+}
+
+#button_download:hover .text {
+  opacity: 1;
+  margin-right: 0px;
+}
+
+#mireMiddleLeft{
+  position: fixed;
+  width: 25px;
+  top: 50%; left: 0%;
+  transform: translate(0%, -50%);
+  box-sizing: border-box;
+}
+
+#mireMiddleRight{
+  position: fixed;
+  width: 25px;
+  top: 50%; right: 0px;
+  transform: translate(0%, -50%);
+  box-sizing: border-box;
+}
+
+#mireTopRight{
+  position: fixed;
+  width: 25px;
+  top: 0%; left: 100%;
+  transform: translate(-50%, -30%);
+  box-sizing: border-box;
+}
+
+#coinTopLeft{
+  position: fixed;
+  width: 43px;
+  top: 0%; left: 0%;
+}
+
+#coinTopRight{
+  position: fixed;
+  width: 43px;
+  top: 0%;
+  right: 0%;
+  transform: rotate(90deg);
+}
+
+#coinTopRight{
+  position: fixed;
+  width: 43px;
+  top: 0%;
+  right: 0%;
+  transform: rotate(90deg);
+}
+
+#coinBottomLeft{
+  position: fixed;
+  width: 43px;
+  bottom: 0%;
+  left: 0%;
+  transform: rotate(-90deg);
+}
+
+#coinBottomRight{
+  position: fixed;
+  width: 43px;
+  bottom: 0%;
+  right: 0%;
+  transform: rotate(180deg);
+}
+
+#top2 div {
+  display: inline-block;
+}
+
+#left{
+  width: 33%;
+}
+
+#middle{
+  text-align: center;
+  width: 33%;
+}
+
+#right {
+  text-align: right;
+  width: 33%;
+}
+
+#right p{
+  float:right;
+  -webkit-transition:  0.5s;
+  transition:  0.5s;
+}
+
+#right p:hover {
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#derriere, #zonefonte{
+  margin-top:0px!important;
+}
+
+#zonefonte{
+  position: fixed;
+  height: 100vh;
+}
+
+@keyframes colorchange{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+/*MENU*/
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.menuContainer{
+  z-index: 8000;
+  position: fixed;
+  right: 80px;
+  height:30px;
+  border: 0px solid black;
+  margin-top: 6px;
+  font-family: 'menu-Regular';
+  font-size: 22px;
+  text-align: center;
+  background-color: white;
+}
+
+.menuEntree{
+  width:30px;
+  height:inherit;
+  display:inline-block;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  margin:0px;
+  padding:0px;
+  background-color: white;
+}
+
+.menuEntreeLast{
+  width:30px;
+  height:inherit;
+  display:inline-block;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  margin:0px;
+  padding:0px;
+  background-color: white;
+}
+
+.menuEntree p, .menuEntreeLast p{
+  width:30px;
+  height:30px;
+}
+
+#actif{
+  background-color: black;
+}
+
+#actif a{
+  color: white;
+}
+
+.menuEntree:hover, .menuEntreeLast:hover, .boutonEnglobe:hover{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes colorchange{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+/*FIN MENU*/
+
+/*MODAL*/
+
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 50vw;
+  height: 55vh;
+  overflow: auto;
+  background-color: yellow;
+}
+
+.close-button{
+  float: right;
+  font-size: 2.5vw;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'menu-Regular';
+}
+
+.show-modal{
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+button.trigger{
+  background-color: white;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 22px;
+}
+
+#logofonderiedownload{
+  width: 76%;
+  margin-left: 12%;
+  margin-top: 3vw;
+  margin-bottom: 3.5vw;
+}
+
+#textModal{
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 2vw;
+  line-height: 2.5vw;
+}
+
+#textModal p{
+  margin-bottom: 3vh;
+}
+
+#textModal a:hover{
+  animation: colorchange-text 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes colorchange-text
+{
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  75%  {color: green;}
+  100% {color: red;}
+}
+
+#newsletter{
+  width: 70%;
+  margin-left:15%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 2vw;
+}
+
+#mc_embed_signup{
+  padding-top: 5%;
+}
+
+.required-email{
+  font-family: 'Zara-Regular';
+  display:block;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 11vh;
+  font-size: 2vw;
+  padding-left: 3%;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 0px;
+  transition: all .2s ease-in-out;
+}
+
+.required-email:hover{
+  border-radius: 0px;
+}
+
+.button{
+  margin-top: 7%;
+  background-color: white;
+  color: black;
+  font-family: 'Zara-Regular';
+  border: 0px;
+  margin-bottom: 8%;
+  font-size: 2vw;
+  padding: 2%;
+}
+
+.button:hover{
+  cursor: pointer;
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/*FIN MODAL*/
+
+#logofonderiedownload2{
+  text-align: center;
+  width: 50%;
+  margin-top: 8vh;
+}
+
+/*RESPONSIVE MENU*/
+
+@media (max-width: 600px) {
+  .menuContainer {
+    margin-left: calc( ( 100vw - 186px ) / 2);
+    right: auto;
+  }
+  #mireMiddleTop{
+    display: none;
+  }
+  .modal-content{
+    width: 65vw;
+    height: 76vh;
+  }
+  #textModal{
+    font-size: 2.6vw;
+    line-height: 3.1vw;
+  }
+  #newsletter{
+    width: 100%;
+    margin-left:0%;
+  }
+}
+/*MOBILE*/
+@media all and (max-device-width: 480px)
+{
+
+#mireMiddleTop{
+    display: block;
+  }
+
+.menuContainer, .modal{
+  display: none;
+}
+
+#mobile{
+  display: block;
+}
+
+#devant{
+  z-index: 0;
+}
+
+body{
+  background-color: yellow;
+  width: 100%;
+  position: absolute;
+  line-height: normal;
+}
+
+#logofonderiedownload{
+  width: calc( 100vw - 86px );
+  margin-left: 43px;
+  margin-top: 52px;
+}
+
+#about{
+  margin-bottom: 86px;
+}
+
+h1{
+  font-weight: normal;
+  text-align: center;
+  font-size: 8vw;
+  border: 1px solid black;
+  border-radius: 600px;
+  background-color: white;
+  padding: 3%;
+  width: 25%;
+  margin: auto;
+  margin-top: 17vh;
+}
+
+.show, .show2{
+  display: none;
+}
+
+#textModal{
+  margin: 43px;
+  font-size: 5.4vw;
+  line-height: 7.2vw;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#textModal p {
+  margin-bottom: 15px;
+}
+
+#newsletter{
+  width: calc( 100vw - 84px );
+  margin-left: 42px;
+  margin-bottom: 43px;
+}
+
+.mc-field-group{
+  margin-top: 1vh;
+}
+
+.mc-field-group label{
+  font-size: 5vw;
+  margin-top: 2%;
+}
+
+.required-email{
+  width: 90%;
+  margin-left: 5%;
+  font-size: 5vw;
+  margin-top: 8%;
+  height: 50px!important;
+  border-radius: 0px;
+}
+
+.title{
+  height: auto;
+  margin-top: 80px;
+}
+
+.button{
+  font-size: 8vw;
+  border: 1px solid black;
+  border-radius: 600px;
+  background-color: white;
+  padding: 3%;
+  width: 62%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+h2{
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.show2 h2{
+  margin-left: 43px;
+  font-weight: normal;
+  font-size: 8vw;
+  margin-bottom: 2vh;
+}
+
+#button_download{
+  display: inline-block;
+  position: inherit;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'menu-Regular';
+  color: black;
+  font-size: 31px;
+  overflow: auto;
+  margin-left: 3vw;
+  transform: none;
+  margin-bottom: -2.3vh;
+
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-duration: 1s;
+  animation-delay: 4s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#button_download:hover{
+  display: inline-block;
+  position: inherit;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'menu-Regular';
+  color: black;
+  font-size: 31px;
+  overflow: auto;
+  margin-left: 3vw;
+  transform: none;
+  margin-bottom: -2.3vh;
+  animation: none;
+}
+
+.show2 input{
+  width: calc( 100vw - 84px );
+  margin-left: 42px;
+  height: 70px;
+  font-size: 9vw!important;
+  padding: 3%;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.show2 input:last-child{
+  margin-top: 2vh!important;
+}
+
+.firstInput{
+  margin-top: 10px;
+}
+
+#credible{
+  font-family: 'Credible-Regular';
+}
+
+#credible input{
+  font-family: 'Credible-Regular';
+}
+
+#garamondt{
+  font-family: 'Garamondt-Regular';
+}
+
+#garamondt input{
+  font-family: 'Garamondt-Regular';
+}
+
+#garamondt input:last-child{
+  font-family: 'Garamondt-Italic';
+}
+
+#tribalium{
+  font-family: 'Tribalium-Regular';
+}
+
+#tribalium input{
+  font-family: 'Tribalium-Regular';
+}
+
+#tribalium input:last-child{
+  font-family: 'Tribalium-Poster';
+}
+
+#zara{
+  font-family: 'Zara-Regular';
+}
+
+#zara input{
+  font-family: 'Zara-Regular';
+}
+
+#zara input:last-child{
+  font-family: 'Zara-Oblique';
+}
+
+.button:hover{
+  animation: none;
+}
+
+#button_download:hover .picto {
+  display: block;
+  animation: none;
+}
+
+#button_download:active{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+h1:active{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+mc-embedded-subscribe:active{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#logofonderiedownload2 {
+    text-align: center;
+    width: 90%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}

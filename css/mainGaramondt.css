@@ -1,0 +1,872 @@
+body {
+  font-family: 'Zara-Regular';
+  min-height: 100vh;
+}
+
+#mobile{
+  display: none;
+}
+
+#top {
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  text-align: center;
+}
+
+#bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8vh;
+  text-align: center;
+}
+
+#derriere {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#devant {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#devant > *:not(.menuContainer) {
+  z-index: 2;
+}
+
+#mireMiddleBottom {
+  position: fixed;
+  width: 25px;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  box-sizing: border-box;
+}
+
+#mireMiddleTop {
+  position: fixed;
+  width: 25px;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  box-sizing: border-box;
+}
+
+#mireMiddleLeft {
+  position: fixed;
+  width: 25px;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  box-sizing: border-box;
+}
+
+#mireMiddleRight {
+  position: fixed;
+  width: 25px;
+  top: 50%;
+  right: 0px;
+  transform: translate(0%, -50%);
+  box-sizing: border-box;
+}
+
+#mireTopRight {
+  position: fixed;
+  width: 25px;
+  top: 0%;
+  left: 100%;
+  transform: translate(-50%, -30%);
+  box-sizing: border-box;
+}
+
+#coinTopLeft {
+  position: fixed;
+  width: 43px;
+  top: 0%;
+  left: 0%;
+}
+
+#coinTopRight {
+  position: fixed;
+  width: 43px;
+  top: 0%;
+  right: 0%;
+  transform: rotate(90deg);
+}
+
+#coinTopRight {
+  position: fixed;
+  width: 43px;
+  top: 0%;
+  right: 0%;
+  transform: rotate(90deg);
+}
+
+#coinBottomLeft {
+  position: fixed;
+  width: 43px;
+  bottom: 0%;
+  left: 0%;
+  transform: rotate(-90deg);
+}
+
+#coinBottomRight {
+  position: fixed;
+  width: 43px;
+  bottom: 0%;
+  right: 0%;
+  transform: rotate(180deg);
+}
+
+#container {
+  width: 90vw;
+  height: 80vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 43px;
+  margin-bottom: 43px;
+  overflow: hidden;
+}
+
+.scene {
+  width: inherit;
+  height: inherit;
+  background: url("https://fonderie.download/img/garamonBlanc2.svg") 50% 50% no-repeat local;
+  background-size: 70vw;
+  position: relative;
+}
+
+.loupe {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 240px;
+  background-image: url("https://fonderie.download/img/garamonBlanc.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 70vw;
+  border-radius: 50%;
+  cursor: none;
+  opacity: 0;
+}
+
+.loupe:hover {
+  cursor: none;
+}
+
+.loupe.modal-opened, .loupe.modal-opened:hover {
+  cursor: default;
+  z-index: 0;
+  display: none;
+}
+
+.info {
+  bottom: 43px;
+  margin-right: 5vw;
+}
+
+#imgInfo {
+  display: inline-block;
+  width: 20vw;
+  margin-left: 40vw;
+  margin-bottom: 43px;
+}
+
+#imgInfo img {
+  display: inline-block;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  animation: gigotte 2s linear alternate infinite;
+}
+
+@keyframes gigotte {
+    from {
+        transform: translateX(-120px) rotate(-10deg);
+    }
+
+    30% {
+        transform: translateX(50px);
+    }
+
+    60% {
+        transform: translateX(150px) rotate(30deg);
+        color:fuschia;
+    }
+
+    80% {
+        transform: translate(80px) rotate(60deg);
+    }
+
+    to {
+        transform: translate(100px) rotate(30deg);
+
+    }
+}
+
+#imgInfo img:hover {
+  animation-play-state: paused;
+}
+
+#txtInfo {
+  vertical-align: text-bottom;
+  font-family: 'Garamondt-Regular';
+  display: inline-block;
+  width: 100vw;
+  font-size: 2.2vw;
+  line-height: 3vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*MENU*/
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.menuContainer{
+  z-index: 8000;
+  position: fixed;
+  right: 80px;
+  height:30px;
+  border: 0px solid black;
+  margin-top: 6px;
+  font-family: 'menu-Regular';
+  font-size: 22px;
+  text-align: center;
+  background-color: white;
+}
+
+.menuEntree{
+  width:30px;
+  height:inherit;
+  display:inline-block;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  margin:0px;
+  padding:0px;
+  background-color: white;
+}
+
+.menuEntreeLast{
+  width:30px;
+  height:inherit;
+  display:inline-block;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  margin:0px;
+  padding:0px;
+  background-color: white;
+}
+
+.menuEntree p, .menuEntreeLast p{
+  width:30px;
+  height:30px;
+}
+
+#actif{
+  background-color: black;
+}
+
+#actif a{
+  color: white;
+}
+
+.menuEntree:hover, .menuEntreeLast:hover, .boutonEnglobe:hover{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes colorchange{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+/*FIN MENU*/
+
+/*MODAL*/
+
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 50vw;
+  height: 55vh;
+  overflow: auto;
+  background-color: yellow;
+}
+
+.close-button{
+  float: right;
+  font-size: 2.5vw;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'menu-Regular';
+}
+
+.show-modal{
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+button.trigger{
+  background-color: white;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 22px;
+}
+
+#logofonderiedownload{
+  width: 76%;
+  margin-left: 12%;
+  margin-top: 3vw;
+  margin-bottom: 3.5vw;
+}
+
+#textModal{
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 2vw;
+  line-height: 2.5vw;
+}
+
+#textModal p{
+  margin-bottom: 3vh;
+}
+
+#textModal a:hover{
+  animation: colorchange-text 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes colorchange-text
+{
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  75%  {color: green;}
+  100% {color: red;}
+}
+
+#newsletter{
+  width: 80%;
+  margin-left:10%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 2vw;
+}
+
+#mc_embed_signup{
+  padding-top: 5%;
+}
+
+.required-email{
+  font-family: 'Zara-Regular';
+  display:block;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 7vh;
+  font-size: 2vw;
+  padding-left: 3%;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 0px;
+  transition: all .2s ease-in-out;
+}
+
+.required-email:hover{
+  border-radius: 0px;
+}
+
+.button{
+  margin-top: 7%;
+  background-color: white;
+  color: black;
+  font-family: 'Zara-Regular';
+  border: 0px;
+  margin-bottom: 8%;
+  font-size: 2vw;
+  padding: 2%;
+}
+
+.button:hover{
+  cursor: pointer;
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/*FIN MODAL*/
+
+
+#button_download {
+  z-index: 2;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 43px;
+  right: 43px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: "menu-Regular";
+  color: black;
+  font-size: 51px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  transform-origin: center;
+  overflow: hidden;
+
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-duration: 1s;
+  animation-delay: 4s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#button_download:hover {
+  border-radius: 0;
+  cursor: pointer;
+  width: 300px;
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.picto {
+  display: block;
+}
+
+.text {
+  color: black;
+  opacity: 0;
+  text-align: center;
+  padding-top: 0px;
+  transition: all 0s linear;
+  transition: margin-right 0.3s ease-in-out;
+  font-size: 29px;
+  font-family: 'Garamondt-Regular';
+  margin-right: -500px;
+  padding-top: 22px;
+  animation: colorchangetexte 0.5s;
+  animation-delay: 0.1s;
+}
+
+#button_download:hover .picto {
+  display: none;
+}
+
+#button_download:hover .text {
+  opacity: 1;
+  margin-right: 0px;
+}
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  #container {
+    height: 60vh;
+  }
+
+
+@media (max-width: 600px) {
+  .menuContainer {
+    margin-left: calc( ( 100vw - 186px ) / 2);
+    right: auto;
+  }
+  #mireMiddleTop{
+    display: none;
+  }
+  .modal-content{
+    width: 65vw;
+    height: 76vh;
+  }
+  #textModal{
+    font-size: 2.6vw;
+    line-height: 3.1vw;
+  }
+  #newsletter{
+    width: 100%;
+    margin-left:0%;
+  }
+  #container {
+    height: 50vh;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .element {
+    width: 100vw;
+    display: block;
+  }
+
+  .element img {
+    width: 100%;
+    display: block;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+/*RESPONSIVE MENU*/
+@media (max-width: 600px) {
+  .menuContainer {
+    margin-left: calc( ( 100vw - 186px ) / 2);
+    right: auto;
+  }
+  #mireMiddleTop{
+    display: none;
+  }
+  .modal-content{
+    width: 65vw;
+    height: 76vh;
+  }
+  #textModal{
+    font-size: 2.6vw;
+    line-height: 3.1vw;
+  }
+  #newsletter{
+    width: 100%;
+    margin-left:0%;
+  }
+}
+
+/*MOBILE*/
+@media all and (max-device-width: 480px)
+{
+
+#mireMiddleTop{
+    display: block;
+  }
+
+#devant, #derriere, #button_download{
+  display: none;
+}
+
+#mobile{
+  display: block;
+}
+
+body{
+  background-color: yellow;
+  width: 100%;
+  position: absolute;
+  line-height: normal;
+}
+
+#logofonderiedownload{
+  width: calc( 100vw - 86px );
+  margin-left: 43px;
+  margin-top: 52px;
+}
+
+#about{
+  margin-bottom: 86px;
+}
+
+h1{
+  font-weight: normal;
+  text-align: center;
+  font-size: 8vw;
+  border: 1px solid black;
+  border-radius: 600px;
+  background-color: white;
+  padding: 3%;
+  width: 25%;
+  margin: auto;
+  margin-top: 17vh;
+}
+
+.show, .show2{
+  display: none;
+}
+
+#textModal{
+  margin: 43px;
+  font-size: 5.4vw;
+  line-height: 7.2vw;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#textModal p {
+  margin-bottom: 15px;
+}
+
+#newsletter{
+  width: calc( 100vw - 84px );
+  margin-left: 42px;
+  margin-bottom: 43px;
+}
+
+.mc-field-group{
+  margin-top: 1vh;
+}
+
+.mc-field-group label{
+  font-size: 5vw;
+  margin-top: 2%;
+}
+
+.required-email{
+  width: 90%;
+  margin-left: 5%;
+  font-size: 5vw;
+  margin-top: 8%;
+  height: 50px!important;
+  border-radius: 0px;
+}
+
+.title{
+  height: auto;
+  margin-top: 80px;
+}
+
+.button{
+  font-size: 8vw;
+  border: 1px solid black;
+  border-radius: 600px;
+  background-color: white;
+  padding: 3%;
+  width: 62%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+h2{
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.show2 h2{
+  margin-left: 43px;
+  font-weight: normal;
+  font-size: 8vw;
+  margin-bottom: 2vh;
+}
+
+#button_download2{
+  display: inline-block;
+  position: inherit;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'menu-Regular';
+  color: black;
+  font-size: 31px;
+  overflow: auto;
+  margin-left: 3vw;
+  transform: none;
+  margin-bottom: -2.3vh;
+
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-duration: 1s;
+  animation-delay: 4s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#button_download2:hover{
+  display: inline-block;
+  position: inherit;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'menu-Regular';
+  color: black;
+  font-size: 31px;
+  overflow: auto;
+  margin-left: 3vw;
+  transform: none;
+  margin-bottom: -2.3vh;
+  animation: none;
+}
+
+.show2 input{
+  width: calc( 100vw - 84px );
+  margin-left: 42px;
+  height: 70px;
+  font-size: 9vw!important;
+  padding: 3%;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.show2 input:last-child{
+  margin-top: 2vh!important;
+}
+
+.firstInput{
+  margin-top: 10px;
+}
+
+#credible{
+  font-family: 'Credible-Regular';
+}
+
+#credible input{
+  font-family: 'Credible-Regular';
+}
+
+#garamondt{
+  font-family: 'Garamondt-Regular';
+}
+
+#garamondt input{
+  font-family: 'Garamondt-Regular';
+}
+
+#garamondt input:last-child{
+  font-family: 'Garamondt-Italic';
+}
+
+#tribalium{
+  font-family: 'Tribalium-Regular';
+}
+
+#tribalium input{
+  font-family: 'Tribalium-Regular';
+}
+
+#tribalium input:last-child{
+  font-family: 'Tribalium-Poster';
+}
+
+#zara{
+  font-family: 'Zara-Regular';
+}
+
+#zara input{
+  font-family: 'Zara-Regular';
+}
+
+#zara input:last-child{
+  font-family: 'Zara-Oblique';
+}
+
+.button:hover{
+  animation: none;
+}
+
+#button_download2:hover .picto {
+  display: block;
+  animation: none;
+}
+
+#button_download2:active{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+h1:active{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+mc-embedded-subscribe:active{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.picto{
+  text-align: center;
+}
