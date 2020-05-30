@@ -13,7 +13,7 @@ Special thanks to Romain for his help!!
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="font/font.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-inuse.css">
     <script src="./assets.js"></script>
   </head>
   <body>
@@ -69,7 +69,7 @@ Special thanks to Romain for his help!!
         <img id="coinBottomRight" src="img/coin.png">
       </div>
     </div>
-  <div id="gallery" style="padding: 200px"></div>
+  <div id="gallery"></div>
   </body>
   <script>
 
@@ -98,7 +98,7 @@ Special thanks to Romain for his help!!
     const img = document.createElement('img')
     img.setAttribute('src', imagePath)
     img.setAttribute('alt', 'An image')
-    img.setAttribute('style', 'width: 200px')
+    img.setAttribute('class', 'img-gallery')
     galleryFragment.appendChild(img)
   })
   gallery.appendChild(galleryFragment)
