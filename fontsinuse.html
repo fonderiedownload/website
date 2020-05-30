@@ -114,10 +114,18 @@ Special thanks to Romain for his help!!
     if (!['SPAN', 'IMG'].includes(event.target.nodeName)) slidedeck.classList.toggle('closed', true)
   }
 
+  function prevImage() {
+    openSlidedeck(parseInt(slidedeck.dataset.index, 10) - 1)
+  }
+
+  function nextImage() {
+    openSlidedeck(parseInt(slidedeck.dataset.index, 10) + 1)
+  }
+
   const leftArrow = slidedeck.querySelector('#slidedeck-flex-container > div:first-child span')
-  leftArrow.addEventListener('click', () => openSlidedeck(parseInt(slidedeck.dataset.index, 10) - 1))
+  leftArrow.addEventListener('click', prevImage)
   const rightArrow = slidedeck.querySelector('#slidedeck-flex-container > div:last-child span')
-  rightArrow.addEventListener('click', () => openSlidedeck(parseInt(slidedeck.dataset.index, 10) + 1))
+  rightArrow.addEventListener('click', nextImage)
 
   const gallery = document.querySelector('#gallery')
   var galleryFragment = document.createDocumentFragment();
@@ -130,6 +138,19 @@ Special thanks to Romain for his help!!
     galleryFragment.appendChild(img)
   })
   gallery.appendChild(galleryFragment)
+
+  window.addEventListener('keydown', ({ keyCode }) => {
+    if (slidedeck.classList.contains('closed')) return;
+    switch (keyCode) {
+      case 37: // left
+        return prevImage();
+      case 39: // right
+        return nextImage();
+      case 27: // esc
+        return closeSidedeck({target: slidedeck});
+      default:
+    }
+  })
 
   </script>
 </html>
