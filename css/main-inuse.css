@@ -1,7 +1,11 @@
 #gallery {
   width: 100%;
-  margin-left: 21px;
-  margin-right: 21px;
+  padding-left: 43px;
+  padding-right: 43px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 43px;
+  grid-row-gap: 43px;
 }
 
 #slidedeck {
@@ -50,9 +54,7 @@
 }
 
 .img-gallery {
-  width: calc((100% - 172px) / 3);
-  padding-left: 21px;
-  padding-right: 21px;
+  width: 100%;
   cursor: pointer;
   z-index: 3001; /* on top of #devant */
   position: relative; /* for z-index to work */
@@ -85,9 +87,7 @@
 }
 
 #tags{
-  padding-top: 43px;
-  padding-left: 43px;
-  padding-right: 43px;
+  padding: 43px;
   display: flex;
   justify-content: space-between;
 }
