@@ -1,9 +1,8 @@
 #gallery {
-  width: 100%;
   padding-left: 43px;
   padding-right: 43px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
   grid-column-gap: 43px;
   grid-row-gap: 43px;
 }
