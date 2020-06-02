@@ -1,5 +1,7 @@
 #gallery {
-  padding: 200px 0 0 200px;
+  width: 100%;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 
 #slidedeck {
@@ -48,7 +50,9 @@
 }
 
 .img-gallery {
-  width: 200px;
+  width: calc((100% - 86px) / 3);
+  padding-left: 21px;
+  padding-right: 21px;
   cursor: pointer;
   z-index: 3001; /* on top of #devant */
   position: relative; /* for z-index to work */
@@ -146,6 +150,7 @@ button:hover{
 body{
   font-family: 'Zara-Regular';
   height: 100vh;
+  overflow-x: hidden;
 }
 
 #mobile{
@@ -299,7 +304,7 @@ a:visited{
 }
 
 .menuContainer{
-  z-index: 8000;
+  z-index: 1;
   position: fixed;
   top: 0px;
   right: 80px;
