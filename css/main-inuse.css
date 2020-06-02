@@ -1,7 +1,7 @@
 #gallery {
   width: 100%;
-  padding-left: 21px;
-  padding-right: 21px;
+  margin-left: 21px;
+  margin-right: 21px;
 }
 
 #slidedeck {
@@ -50,7 +50,7 @@
 }
 
 .img-gallery {
-  width: calc((100% - 86px) / 3);
+  width: calc((100% - 172px) / 3);
   padding-left: 21px;
   padding-right: 21px;
   cursor: pointer;
@@ -109,8 +109,6 @@ button:hover{
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: infinite;
 }
-
-
 
 .button-selected{
   color: white;
