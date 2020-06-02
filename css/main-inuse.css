@@ -73,6 +73,7 @@
 }
 
 #tags{
+  padding-top: 43px;
   padding-left: 43px;
   padding-right: 43px;
   display: flex;
@@ -83,12 +84,22 @@
   color: black;
   border: 1px solid black;
   background-color: white;
-  width: 80px;
   text-align: center;
+  width: 12%;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 22px;
 }
 
 button:hover{
   cursor: pointer;
+}
+
+#button-selected{
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  text-align: center;
 }
 
 #button-all{
@@ -101,6 +112,10 @@ button:hover{
 
 #button-garamondt{
   font-family: 'Garamondt-Regular';
+}
+
+#button-quarantype{
+  font-family: 'Quarantype-Regular';
 }
 
 #button-tribalium{
