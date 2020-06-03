@@ -1,10 +1,12 @@
 #gallery {
-  padding-left: 43px;
-  padding-right: 43px;
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
   grid-column-gap: 43px;
-  grid-row-gap: 43px;
+  grid-row-gap: 43px;*/
+  /*AJOUT*/
+  width: 100%;
+  padding-left: 21.5px;
+  padding-right: 21.5px;
 }
 
 #slidedeck {
@@ -53,10 +55,14 @@
 }
 
 .img-gallery {
-  width: 100%;
+  /*width: 100%;*/
   cursor: pointer;
   z-index: 3001; /* on top of #devant */
   position: relative; /* for z-index to work */
+  /*AJOUT*/
+  width: calc((100% - 215px) / 4);
+  margin-left: 21.5px;
+  margin-right: 21.5px;
 }
 
 .img-gallery:hover{
