@@ -184,9 +184,6 @@ Special thanks to Romain for his help!!
     document.querySelector('.button-selected').classList.toggle('button-selected')
     event.target.classList.add('button-selected')
     const isAllButton = id === 'all'
-    // allGalleryImages
-    //   .filter(el => isAllButton || !('tags' in el.dataset) || !el.dataset.tags.match(id))
-    //   .forEach(el => isAllButton ? el.classList.toggle('display-none', false) : el.classList.toggle('display-none'))
     if (isAllButton) displayGallery(window.images)
     else {
       displayGallery(window.images.filter(({tags}) => tags && tags.includes(id)))
