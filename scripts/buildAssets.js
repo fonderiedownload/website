@@ -11,6 +11,7 @@ const buildAssets = (array) => array;
 const images = fs
   .readdirSync(PICTURES_DIRECTORY)
   .filter((file) => file.indexOf(".") !== 0)
+  .sort()
   .map((file) => path.join(".", "inuse", file));
 
 const assets = buildAssets(images);
