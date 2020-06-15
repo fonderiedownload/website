@@ -32,7 +32,7 @@ window.images = [
 	{
 		"path": "inuse/002-yolo.jpg",
 		"tags": [
-			"garamon(d/t)",
+			"garamondt",
 			"zara"
 		]
 	},

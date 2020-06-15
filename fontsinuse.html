@@ -24,7 +24,7 @@ Special thanks to Romain for his help!!
         <p><a href="mailto:contact@fonderie.download">Send us a mail</a> if you want your work to be featured.</p>
       </div>
       <div id="tags">
-        <button class="button-selected" id="button-all">All</button>
+        <button class="button-selected button-tags" id="button-all">All</button>
         <button class="button-tags" id="button-credible">Crédible</button>
         <button class="button-tags" id="button-garamondt">Garamon(d/t)</button>
         <button class="button-tags" id="button-quarantype">Quarantype</button>
@@ -32,7 +32,7 @@ Special thanks to Romain for his help!!
         <button class="button-tags" id="button-zara">Zara</button>
       </div>
     </div>
-    <div id="gallery" class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+    <div id="gallery" class="grid">
       <div class="grid-col grid-col--1"></div>
       <div class="grid-col grid-col--2"></div>
       <div class="grid-col grid-col--3"></div>
@@ -123,10 +123,10 @@ Special thanks to Romain for his help!!
   slidedeck.addEventListener('click', closeSidedeck)
 
   function openSlidedeck(i) {
-    const index = (i + window.images.length) % window.images.length // To avoid negative values
+    const index = (i + window.slidedeckImages.length) % window.slidedeckImages.length // To avoid negative values
     slidedeck.dataset.index = index
-    slidedeck.querySelector('img').setAttribute('src', window.images[index].path)
-    slidedeck.querySelector('img + div').innerHTML = `Used font(s): ${(window.images[index].tags || []).join(', ')}`
+    slidedeck.querySelector('img').setAttribute('src', window.slidedeckImages[index].path)
+    slidedeck.querySelector('img + div').innerHTML = `Used font(s): ${(window.slidedeckImages[index].tags || []).join(', ')}`
     slidedeck.classList.toggle('closed', false)
   }
 
@@ -150,15 +150,53 @@ Special thanks to Romain for his help!!
 
   const gallery = document.querySelector('#gallery')
   var galleryFragment = document.createDocumentFragment();
-  const images = window.images.forEach((imagePath, i) => {
-    const img = document.createElement('img')
-    img.setAttribute('src', imagePath.path)
-    img.setAttribute('alt', 'An image')
-    img.setAttribute('class', 'grid-item')
-    img.addEventListener('click', () => openSlidedeck(i))
-    galleryFragment.appendChild(img)
+  
+  let allGalleryImages = []
+
+  const displayGallery = (imagesToDisplay) => {
+    window.slidedeckImages = imagesToDisplay
+    allGalleryImages = []
+    Array.from(gallery.querySelectorAll('img.grid-item')).forEach(el => el.parentElement.removeChild(el))
+    const images = imagesToDisplay.forEach((imageDetails, i) => {
+      const img = document.createElement('img')
+      img.setAttribute('src', imageDetails.path)
+      img.setAttribute('alt', 'An image')
+      if (imageDetails.tags) img.dataset.tags = imageDetails.tags
+      img.setAttribute('class', 'grid-item')
+      img.addEventListener('click', () => openSlidedeck(i))
+      allGalleryImages.push(img)
+      galleryFragment.appendChild(img)
+    })
+    gallery.appendChild(galleryFragment)
+    if (!window.colcade) {
+      window.colcade = new Colcade( '#gallery', {
+        columns: '.grid-col',
+        items: '.grid-item'
+      });
+    }
+    else {
+      window.colcade.reload()
+    }
+  }
+  displayGallery(window.images)
+
+  const onTypoButtonClicked = (event, id) => {
+    document.querySelector('.button-selected').classList.toggle('button-selected')
+    event.target.classList.add('button-selected')
+    const isAllButton = id === 'all'
+    // allGalleryImages
+    //   .filter(el => isAllButton || !('tags' in el.dataset) || !el.dataset.tags.match(id))
+    //   .forEach(el => isAllButton ? el.classList.toggle('display-none', false) : el.classList.toggle('display-none'))
+    if (isAllButton) displayGallery(window.images)
+    else {
+      displayGallery(window.images.filter(({tags}) => tags && tags.includes(id)))
+    }
+  }
+
+  Array.from(document.querySelectorAll('[id^="button"]')).forEach(button => {
+    const id = button.id.match(/button-(.*)/)[1]
+    document.querySelector(`#button-${id}`).addEventListener('click', (e) => onTypoButtonClicked(e, id))
   })
-  gallery.appendChild(galleryFragment)
 
   window.addEventListener('keydown', ({ keyCode }) => {
     if (slidedeck.classList.contains('closed')) return;

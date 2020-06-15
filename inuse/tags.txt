@@ -1,2 +1,2 @@
 001.png: zara
-002-yolo.jpg: garamon(d/t), zara
+002-yolo.jpg: garamondt, zara
