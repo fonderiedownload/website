@@ -2,20 +2,31 @@ const fs = require("fs");
 const path = require("path");
 
 const PICTURES_DIRECTORY = path.join(__dirname, "..", "inuse");
-
+const TAGS_FILE = path.join(PICTURES_DIRECTORY, "tags.txt");
 const OUTPUT_FILE = path.join(__dirname, "..", "assets.js");
 
-const buildAssets = (array) => array;
-// TODO newest first .sort((a, b) => a.hash - b.hash)
+const buildAssets = (images, tags) =>
+  images.map(({ path, filename }) => ({ path, tags: tags[filename] }));
 
 const images = fs
   .readdirSync(PICTURES_DIRECTORY)
-  .filter((file) => file.indexOf(".") !== 0)
+  .filter(
+    (file) => file.indexOf(".") !== 0 && file.indexOf("tags.txt") == 0 - 1
+  )
   .sort()
   .reverse()
-  .map((file) => path.join(".", "inuse", file));
+  .map((filename) => ({ path: path.join(".", "inuse", filename), filename }));
 
-const assets = buildAssets(images);
+const tags = fs
+  .readFileSync(TAGS_FILE, "utf8")
+  .split("\n")
+  .filter(Boolean)
+  .reduce((acc, line) => {
+    const [name, tags] = line.split(":").map((el) => el.trim());
+    return { ...acc, [name]: tags.split(",").map((el) => el.trim()) };
+  }, {});
+
+const assets = buildAssets(images, tags);
 
 const outputFileContent =
   "window.images = " + JSON.stringify(assets, null, "\t");

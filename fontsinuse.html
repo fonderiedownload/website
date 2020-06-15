@@ -41,7 +41,7 @@ Special thanks to Romain for his help!!
     <div id="slidedeck" class="closed">
       <div id="slidedeck-flex-container">
         <div><span>&lt;</span></div>
-        <div><img src="" alt="Current image" /><div>Description</div></div>
+        <div><img src="" alt="Current image" /><div></div></div>
         <div><span>&gt;</span></div>
       </div>
     </div>
@@ -125,7 +125,8 @@ Special thanks to Romain for his help!!
   function openSlidedeck(i) {
     const index = (i + window.images.length) % window.images.length // To avoid negative values
     slidedeck.dataset.index = index
-    slidedeck.querySelector('img').setAttribute('src', window.images[index])
+    slidedeck.querySelector('img').setAttribute('src', window.images[index].path)
+    slidedeck.querySelector('img + div').innerHTML = `Used font(s): ${(window.images[index].tags || []).join(', ')}`
     slidedeck.classList.toggle('closed', false)
   }
 
@@ -151,7 +152,7 @@ Special thanks to Romain for his help!!
   var galleryFragment = document.createDocumentFragment();
   const images = window.images.forEach((imagePath, i) => {
     const img = document.createElement('img')
-    img.setAttribute('src', imagePath)
+    img.setAttribute('src', imagePath.path)
     img.setAttribute('alt', 'An image')
     img.setAttribute('class', 'grid-item')
     img.addEventListener('click', () => openSlidedeck(i))
