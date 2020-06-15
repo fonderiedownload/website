@@ -14,6 +14,7 @@ Special thanks to Romain for his help!!
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="font/font.css">
     <link rel="stylesheet" href="css/main-inuse.css">
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
     <script src="./assets.js"></script>
   </head>
   <body>
@@ -31,7 +32,12 @@ Special thanks to Romain for his help!!
         <button class="button-tags" id="button-zara">Zara</button>
       </div>
     </div>
-    <div id="gallery"></div>
+    <div id="gallery" class="grid">
+      <div class="grid-col grid-col--1"></div>
+      <div class="grid-col grid-col--2"></div>
+      <div class="grid-col grid-col--3"></div>
+      <div class="grid-col grid-col--4"></div>
+    </div>
     <div id="slidedeck" class="closed">
       <div id="slidedeck-flex-container">
         <div><span>&lt;</span></div>
@@ -147,11 +153,16 @@ Special thanks to Romain for his help!!
     const img = document.createElement('img')
     img.setAttribute('src', imagePath)
     img.setAttribute('alt', 'An image')
-    img.setAttribute('class', 'img-gallery')
+    img.setAttribute('class', 'grid-item')
     img.addEventListener('click', () => openSlidedeck(i))
     galleryFragment.appendChild(img)
   })
   gallery.appendChild(galleryFragment)
+
+  var colc = new Colcade( '#gallery', {
+    columns: '.grid-col',
+    items: '.grid-item'
+  });
 
   window.addEventListener('keydown', ({ keyCode }) => {
     if (slidedeck.classList.contains('closed')) return;
