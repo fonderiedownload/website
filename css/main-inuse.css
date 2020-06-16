@@ -84,12 +84,12 @@
 #textheader{
   text-align: center;
   font-family: Zara;
-  font-size: 1.9vw;
+  font-size: 2vw;
   font-weight: lighter;
   padding-top: 86px;
   padding-left: 43px;
   padding-right: 43px;
-  line-height: 2.5vw;
+  line-height: 2.8vw;
 }
 
 #textheader a:hover{
@@ -543,24 +543,28 @@ button.trigger{
   }
 }
 
-/*RESPONSIVE GRID*/
+/*RESPONSIVE*/
 
 /* 3 columns */
 @media ( max-width: 1000px ) {
   .grid-col--4 { display: none }
   #gallery > .grid-col--3 { margin-right: 43px }
+  #textheader{font-size: 2.5vw; line-height: 3.3vw}
 }
 
 /* 2 columns */
 @media ( max-width: 600px ) {
   .grid-col--3, .grid-col--4 { display: none }
   #gallery > .grid-col--2 { margin-right: 43px }
+  #textheader{font-size: 3.5vw; line-height: 4.3vw}
 }
 
 /* 1 column */
 @media ( max-width: 400px ) {
   .grid-col--2, .grid-col--3, .grid-col--4 { display: none }
   #gallery > .grid-col--1 { margin-right: 43px }
+  #textheader{font-size: 4.5vw; line-height: 5.3vw }
+  #textheader p:first-child { margin-bottom: 20px }
 }
 
 /*MOBILE*/
