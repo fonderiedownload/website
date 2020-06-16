@@ -543,6 +543,26 @@ button.trigger{
   }
 }
 
+/*RESPONSIVE GRID*/
+
+/* 3 columns */
+@media ( max-width: 1000px ) {
+  .grid-col--4 { display: none }
+  #gallery > .grid-col--3 { margin-right: 43px }
+}
+
+/* 2 columns */
+@media ( max-width: 600px ) {
+  .grid-col--3, .grid-col--4 { display: none }
+  #gallery > .grid-col--2 { margin-right: 43px }
+}
+
+/* 1 column */
+@media ( max-width: 400px ) {
+  .grid-col--2, .grid-col--3, .grid-col--4 { display: none }
+  #gallery > .grid-col--1 { margin-right: 43px }
+}
+
 /*MOBILE*/
 @media all and (max-device-width: 480px)
 {
@@ -560,7 +580,6 @@ button.trigger{
 }
 
 body{
-  background-color: yellow;
   width: 100%;
   position: absolute;
   line-height: normal;
