@@ -549,8 +549,15 @@ button.trigger{
 @media ( max-width: 1000px ) {
   .grid-col--4 { display: none }
   #gallery > .grid-col--3 { margin-right: 43px }
-  #textheader{font-size: 2.5vw; line-height: 3.3vw}
+  #textheader { font-size: 2.5vw; line-height: 3.3vw }
+  #tags { flex-wrap: wrap }
+  .button-tags { flex: 0 0 27%; font-size: 2vw }
+  .button-tags:first-child { margin-bottom: 21.5px }
 }
+
+
+flex: 0 0 27%;
+margin-bottom: 21.5px;
 
 /* 2 columns */
 @media ( max-width: 600px ) {
@@ -565,6 +572,7 @@ button.trigger{
   #gallery > .grid-col--1 { margin-right: 43px }
   #textheader{font-size: 4.5vw; line-height: 5.3vw }
   #textheader p:first-child { margin-bottom: 20px }
+  .button-tags { height: 7vw; font-size: 3vw }
 }
 
 /*MOBILE*/
