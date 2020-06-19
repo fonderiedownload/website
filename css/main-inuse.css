@@ -29,7 +29,7 @@
   background-color: rgba(0,0,0,0.8);
   color: white;
   text-align: center;
-  padding: 30px 0;
+  padding: 43px 0 43px 0;
 }
 
 #slidedeck-flex-container {
@@ -39,6 +39,11 @@
 
 #slidedeck-flex-container > div {
   flex: 1 0 0;
+}
+
+#slidedeck-flex-container div:nth-child(2) div {
+  margin-top: 43px;
+  font-size: 1.5vw;
 }
 
 /* ARROWS */
@@ -553,17 +558,17 @@ button.trigger{
   #tags { flex-wrap: wrap }
   .button-tags { flex: 0 0 27%; font-size: 2vw }
   .button-tags:first-child { margin-bottom: 21.5px }
+  #slidedeck-flex-container > div { flex: 2 0 0 }
+  #slidedeck-flex-container > div:first-child, #slidedeck-flex-container > div:last-child { display: flex; flex: 1 0 0; font-size: 80px }
 }
-
-
-flex: 0 0 27%;
-margin-bottom: 21.5px;
 
 /* 2 columns */
 @media ( max-width: 600px ) {
   .grid-col--3, .grid-col--4 { display: none }
   #gallery > .grid-col--2 { margin-right: 43px }
   #textheader{font-size: 3.5vw; line-height: 4.3vw}
+  #slidedeck-flex-container > div:first-child, #slidedeck-flex-container > div:last-child { font-size: 60px }
+  #slidedeck-flex-container div:nth-child(2) div { font-size: 3vw }
 }
 
 /* 1 column */
@@ -573,6 +578,9 @@ margin-bottom: 21.5px;
   #textheader{font-size: 4.5vw; line-height: 5.3vw }
   #textheader p:first-child { margin-bottom: 20px }
   .button-tags { height: 7vw; font-size: 3vw }
+  #slidedeck-flex-container > div { flex: 4 0 0 }
+  #slidedeck-flex-container > div:first-child, #slidedeck-flex-container > div:last-child { display: flex; flex: 1 0 0; font-size: 40px }
+  #slidedeck-flex-container div:nth-child(2) div { font-size: 4vw }
 }
 
 /*MOBILE*/
