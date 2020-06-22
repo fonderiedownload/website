@@ -7,16 +7,6 @@ body{
   overflow-x: hidden;
 }
 
-#mobile{
-  display: none;
-}
-
-#devant{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
 #devant img{
   filter: invert(1);
   -webkit-filter: invert(1);
@@ -176,6 +166,7 @@ input:focus{
 
 #button_download{
   position: fixed;
+  z-index: 3001;
   width: 70px;
   height: 70px;
   bottom:43px;

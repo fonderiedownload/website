@@ -168,10 +168,6 @@ body{
   overflow-x: hidden;
 }
 
-#mobile{
-  display: none;
-}
-
 #conteneur1, #conteneur2, #conteneur3{
   display: flex;
 }
@@ -509,17 +505,7 @@ h2{
   animation: none;
 }
 
-#button_download:active{
-  animation: colorchange 0.5s;
-  -webkit-animation-iteration-count: infinite;
-}
-
-h1:active{
-  animation: colorchange 0.5s;
-  -webkit-animation-iteration-count: infinite;
-}
-
-mc-embedded-subscribe:active{
+#button_download:active, h1:active, mc-embedded-subscribe:active{
   animation: colorchange 0.5s;
   -webkit-animation-iteration-count: infinite;
 }
