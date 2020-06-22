@@ -165,76 +165,20 @@ input:focus{
 }
 
 #button_download{
-  position: fixed;
-  z-index: 3001;
-  width: 70px;
-  height: 70px;
-  bottom:43px;
-  right:43px;
-  border-radius: 50%;
-  border: 1px solid white;
-  background-color: black;
-  font-family: 'menu-Regular';
-  color: white;
-  font-size: 51px;
-  transition: all .3s ease-in-out;
-  text-align: center;
-  transform-origin: center;
-  overflow: hidden;
-
-  -webkit-animation-name: spinner;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: 2;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 4s;
-
-  animation-name: spinner;
-  animation-timing-function: linear;
-  animation-iteration-count: 2;
-  animation-duration: 1s;
-  animation-delay: 4s;
-
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-#button_download:hover {
-  border-radius:0;
-  cursor: pointer;
-  width: 300px;
-  animation: colorchange 0.5s;
-  -webkit-animation-iteration-count: infinite;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
 }
 
 .picto{
-  display: block;
-  color: white;
+  color: black;
 }
 
 .text {
-  color: white;
-  opacity: 0;
-  text-align: center;
-  padding-top:0px;
-  transition: all 0s linear;
-  transition: margin-right .3s ease-in-out;
+  color: black;
   font-size: 20px;
   font-family: "Tribalium-Regular";
-  margin-right: -500px;
   padding-top: 26px;
-  animation: colorchangetexte 0.5s;
-  animation-delay: 0.1s;
-}
-
-#button_download:hover .picto {
-  display: none;
-}
-
-#button_download:hover .text {
-  opacity: 1;
-  margin-right: 0px;
 }
 
 @-webkit-keyframes spinner {
