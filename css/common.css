@@ -11,7 +11,7 @@ a:visited{
 }
 
 .menuContainer{
-  z-index: 8000;
+  z-index: 3000;
   position: fixed;
   right: 80px;
   height:30px;
@@ -115,7 +115,7 @@ a:visited{
 }
 
 .show-modal {
-  z-index: 3001;
+  z-index: 10000;
   opacity: 1;
   visibility: visible;
   transform: scale(1.0);
