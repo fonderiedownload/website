@@ -20,7 +20,7 @@
 }
 
 #slidedeck {
-  z-index: 3001; /* on top of #devant */
+  z-index: 3003; /* on top of #common-template */
   position: fixed; /* for z-index to work */
   top: 0;
   right: 0;
@@ -72,7 +72,7 @@
 .grid-item {
   cursor: pointer;
   width: 100%;
-  z-index: 3001; /* on top of #devant */
+  z-index: 3001; /* on top of #common-template */
   position: relative; /* for z-index to work */
 }
 
@@ -162,6 +162,15 @@ button:hover{
   font-family: 'Zara-Regular';
 }
 
+#common-template{
+  z-index: unset;
+}
+
+.menuContainer{
+  top:0px;
+  z-index: 3002;
+}
+
 body{
   font-family: 'Zara-Regular';
   height: 100vh;
@@ -170,14 +179,6 @@ body{
 
 #conteneur1, #conteneur2, #conteneur3{
   display: flex;
-}
-
-#devant{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 #top2 div {
