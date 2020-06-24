@@ -94,7 +94,7 @@ Special thanks to Romain for his help!!
     <div id="slidedeck" class="closed">
       <div id="slidedeck-flex-container">
         <div><span>&lt;</span></div>
-        <div><img src="" alt="Current image" /><div></div></div>
+        <div><img src="" alt="No image" /><div></div></div>
         <div><span>&gt;</span></div>
       </div>
     </div>
@@ -127,8 +127,11 @@ Special thanks to Romain for his help!!
   function openSlidedeck(i) {
     const index = (i + window.slidedeckImages.length) % window.slidedeckImages.length // To avoid negative values
     slidedeck.dataset.index = index
-    slidedeck.querySelector('img').setAttribute('src', window.slidedeckImages[index].path)
-    slidedeck.querySelector('img + div').innerHTML = `Used font(s): ${(window.slidedeckImages[index].tags || []).join(', ')}`
+    const { path, title = '', author = '', tags = [] } = window.slidedeckImages[index]
+    const image = slidedeck.querySelector('img')
+    image.setAttribute('src', path)
+    image.setAttribute('alt', title)
+    slidedeck.querySelector('img + div').innerHTML = `${title}<br />Used font(s): ${(tags).join(', ')}<br />By ${author}`
     slidedeck.classList.toggle('closed', false)
   }
 
@@ -162,8 +165,10 @@ Special thanks to Romain for his help!!
     const images = imagesToDisplay.forEach((imageDetails, i) => {
       const img = document.createElement('img')
       img.setAttribute('src', imageDetails.path)
-      img.setAttribute('alt', 'An image')
+      img.setAttribute('alt', imageDetails.title)
       if (imageDetails.tags) img.dataset.tags = imageDetails.tags
+      if (imageDetails.title) img.dataset.title = imageDetails.title
+      if (imageDetails.author) img.dataset.author = imageDetails.author
       img.setAttribute('class', 'grid-item')
       img.addEventListener('click', () => openSlidedeck(i))
       allGalleryImages.push(img)

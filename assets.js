@@ -34,12 +34,16 @@ window.images = [
 		"tags": [
 			"garamondt",
 			"zara"
-		]
+		],
+		"title": "Random pic",
+		"author": "Van Gogh"
 	},
 	{
 		"path": "inuse/001.png",
 		"tags": [
 			"zara"
-		]
+		],
+		"title": "My beautiful picture",
+		"author": "Picasso"
 	}
 ]

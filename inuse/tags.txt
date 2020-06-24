@@ -1,2 +1,0 @@
-001.png: zara
-002-yolo.jpg: garamondt, zara
