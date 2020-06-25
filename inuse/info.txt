@@ -1,2 +1,4 @@
-001.png: zara ; My beautiful picture ; Picasso
-002-yolo.jpg: garamondt, zara ; Random pic ; Van Gogh
+007.jpg: garamondt ; Fictional poster ; Thomas Carlotti
+009.jpg: tribalium ; La Gousse #28 ; Cécile Bouffard, Roxanne Maillet, Barbara Quintin
+010.jpg: credible, zara ; PD La Revue ; Ariel Martín Pérez
+
