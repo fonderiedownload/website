@@ -42,8 +42,9 @@
 }
 
 #slidedeck-flex-container div:nth-child(2) div {
-  margin-top: 43px;
-  font-size: 1.5vw;
+  margin-top: 21px;
+  font-size: 1vw;
+  line-height: 1.5vw;
 }
 
 /* ARROWS */
@@ -60,7 +61,7 @@
 }
 
 #slidedeck img {
-  height: 90%;
+  height: 88%;
   width: 100%;
   object-fit: contain;
 }
@@ -268,6 +269,7 @@ body{
   #slidedeck-flex-container > div { flex: 4 0 0 }
   #slidedeck-flex-container > div:first-child, #slidedeck-flex-container > div:last-child { display: flex; flex: 1 0 0; font-size: 40px }
   #slidedeck-flex-container div:nth-child(2) div { font-size: 4vw }
+  #slidedeck-flex-container div:nth-child(2) div { margin-top: 0px; line-height: 7vw; }
 }
 
 /*MOBILE*/
