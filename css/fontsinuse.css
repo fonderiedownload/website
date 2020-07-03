@@ -248,6 +248,7 @@ body{
   .button-tags:first-child { margin-bottom: 21.5px }
   #slidedeck-flex-container > div { flex: 2 0 0 }
   #slidedeck-flex-container > div:first-child, #slidedeck-flex-container > div:last-child { display: flex; flex: 1 0 0; font-size: 80px }
+  #slidedeck-flex-container div:nth-child(2) div { font-size: 2vw; line-height: 2.5vw;}
 }
 
 /* 2 columns */
@@ -256,7 +257,7 @@ body{
   #gallery > .grid-col--2 { margin-right: 43px }
   #textheader{font-size: 3.5vw; line-height: 4.3vw}
   #slidedeck-flex-container > div:first-child, #slidedeck-flex-container > div:last-child { font-size: 60px }
-  #slidedeck-flex-container div:nth-child(2) div { font-size: 3vw }
+  #slidedeck-flex-container div:nth-child(2) div { font-size: 2.5vw; line-height: 3.5vw;}
 }
 
 /* 1 column */
@@ -268,8 +269,7 @@ body{
   .button-tags { height: 7vw; font-size: 3vw }
   #slidedeck-flex-container > div { flex: 4 0 0 }
   #slidedeck-flex-container > div:first-child, #slidedeck-flex-container > div:last-child { display: flex; flex: 1 0 0; font-size: 40px }
-  #slidedeck-flex-container div:nth-child(2) div { font-size: 4vw }
-  #slidedeck-flex-container div:nth-child(2) div { margin-top: 0px; line-height: 7vw; }
+  #slidedeck-flex-container div:nth-child(2) div { font-size: 4vw; margin-top: 0px; line-height: 7vw; }
 }
 
 /*MOBILE*/
