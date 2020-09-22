@@ -69,6 +69,13 @@
 }
 
 @font-face {
+  font-family: 'Quarantype-Oblique';
+  src: url('Quarantype-Oblique.eot?#iefix') format('embedded-opentype'), url('Quarantype-Oblique.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'TribaliumNeue-Regular';
   src: url('TribaliumNeue-Regular.eot?#iefix') format('embedded-opentype'),  url('TribaliumNeue-Regular.otf')  format('opentype'),
 	     url('TribaliumNeue-Regular.woff') format('woff'), url('TribaliumNeue-Regular.ttf')  format('truetype'), url('TribaliumNeue-Regular.svg#TribaliumNeue-Regular') format('svg');

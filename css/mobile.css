@@ -184,6 +184,18 @@ h2{
   margin-top: 10px;
 }
 
+#quarantype{
+  font-family: 'Quarantype-Regular';
+}
+
+#quarantype input{
+  font-family: 'Quarantype-Regular';
+}
+
+#quarantype input:last-child{
+  font-family: 'Quarantype-Oblique';
+}
+
 #credible{
   font-family: 'Credible-Regular';
 }
