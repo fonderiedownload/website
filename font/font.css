@@ -67,3 +67,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'TribaliumNeue-Regular';
+  src: url('TribaliumNeue-Regular.eot?#iefix') format('embedded-opentype'),  url('TribaliumNeue-Regular.otf')  format('opentype'),
+	     url('TribaliumNeue-Regular.woff') format('woff'), url('TribaliumNeue-Regular.ttf')  format('truetype'), url('TribaliumNeue-Regular.svg#TribaliumNeue-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TribaliumNeue-Poster';
+  src: url('TribaliumNeue-Poster.eot?#iefix') format('embedded-opentype'),  url('TribaliumNeue-Poster.otf')  format('opentype'),
+	     url('TribaliumNeue-Poster.woff') format('woff'), url('TribaliumNeue-Poster.ttf')  format('truetype'), url('TribaliumNeue-Poster.svg#TribaliumNeue-Poster') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

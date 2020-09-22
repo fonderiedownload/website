@@ -1,0 +1,576 @@
+body{
+  font-family: "TribaliumNeue-Regular";
+  height: 100vh;
+  top: 0px;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+#common-template img{
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  -moz-filter: invert(1);
+  -o-filter: invert(1);
+  -ms-filter: invert(1);
+}
+
+/* COURBE */
+
+svg {
+  width: 70vw;
+  height: 700px;
+  margin: 0 auto;
+  display: block;
+  animation: bounce 5s ease-in-out;
+  -moz-animation: bounce 5s ease-in-out;
+  -webkit-animation: bounce 5s  ease-in-out;
+  }
+
+@-webkit-keyframes bounce {
+  0%   {width:40vw; opacity: 0.2;}
+  100%  {width: 70vw; opacity: 1;}
+}
+
+@keyframes bounce {
+  0%   {width:40vw; opacity: 0.2;}
+  100%  {width: 70vw; opacity: 1;}
+}
+
+path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-dashoffset: 0;
+}
+
+/* FIN COURBE */
+
+input{
+  cursor:text;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+input:hover{
+  cursor: text;
+}
+
+input:focus{
+  outline: none;
+}
+
+#texteTribalium{
+  width: 100vw;
+  animation: opacity 10s ease-in-out;
+  -moz-animation: opacity 10s ease-in-out;
+  -webkit-animation: opacity 10s  ease-in-out;
+}
+
+@-webkit-keyframes opacity {
+  0%   {opacity: 0; }
+  100%  {opacity: 1;}
+}
+
+@keyframes opacity {
+    0%   {opacity: 0; }
+    100%  {opacity: 1;}
+}
+
+#texteTribalium span{
+  animation: typo 1s infinite ease-in-out;
+  -moz-animation: typo 1s infinite ease-in-out;
+  -webkit-animation:typo 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes typo {
+  0%   {font-family:"TribaliumNeue-Regular" ; opacity: 1;}
+  33%   {font-family:"TribaliumNeue-Poster" ; opacity: 1;}
+  66%   {font-family:"TribaliumNeue-Regular" ; opacity: 1;}
+  100%  {font-family:"TribaliumNeue-Poster"; opacity: 1 ;}
+}
+
+@keyframes typo {
+    0%   {font-family:"TribaliumNeue-Regular" ; opacity: 1;}
+    33%   {font-family:"TribaliumNeue-Poster" ; opacity: 1;}
+    66%   {font-family:"TribaliumNeue-Regular" ; opacity: 1;}
+    100%  {font-family:"TribaliumNeue-Poster"; opacity: 1 ;}
+}
+
+.ligneUn{
+  font-size: 5.7vw;
+  text-align: center;
+}
+
+.ligneDeux{
+  font-family: "TribaliumNeue-Poster";
+  font-size: 7.65vw;
+  line-height: 7.6vw;
+  text-align:center;
+  letter-spacing: 2px;
+}
+
+.esperluette{
+    margin-top: 3.8vw;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.ligneTrois{
+  font-family: "TribaliumNeue-Poster";
+  font-size: 4.7vw;
+  line-height: 9.3vw;
+  text-align:center;
+  height: 12vh;
+}
+
+.ligneQuatre{
+  margin-top: 7vw;
+  font-size: 4.9vw;
+  line-height: 3.5vw;
+  text-align: center;
+}
+
+.ligneCinq{
+  font-size: 6.45vw;
+  line-height: 11.5vw;
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.formulaireTribalium{
+  margin: 0 auto;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 8vw;
+  width: 60vw;
+  height: 17vw;
+  display: block;
+}
+
+.formulaireTribalium:hover{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  box-shadow: 0px!important;
+}
+
+#regular{
+  font-family: "TribaliumNeue-Regular";
+  margin-top: 6vw;
+}
+
+#poster{
+  font-family: "TribaliumNeue-Poster";
+  margin-top: 2vw;
+  letter-spacing: 2px;
+}
+
+#button_download{
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+.picto{
+  color: white;
+}
+
+.text {
+  color: white;
+  font-size: 22px;
+  font-family: "TribaliumNeue-Regular";
+  padding-top: 26px;
+}
+
+@-webkit-keyframes spinner {
+  from { -webkit-transform: rotateY(0deg); }
+  to { -webkit-transform: rotateY(-360deg); }
+ }
+
+ @keyframes spinner {
+   from {
+     -moz-transform: rotateY(0deg);
+     -ms-transform: rotateY(0deg);
+     transform: rotateY(0deg);
+   }
+   to {
+     -moz-transform: rotateY(-360deg);
+     -ms-transform: rotateY(-360deg);
+     transform: rotateY(-360deg);
+   }
+ }
+
+ /*MENU LAISSÉ ICI À CAUSE DE L'INVERSION NOIR ET BLANC*/
+
+ a{
+   color: white;
+ }
+
+ a:visited{
+   color: white;
+ }
+
+ .menuEntree{
+   border-left: 1px solid white;
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+   background-color: black;
+ }
+
+ .menuEntreeLast{
+   border-left: 1px solid white;
+   border-top: 1px solid white;
+   border-right: 1px solid white;
+   border-bottom: 1px solid white;
+   background-color: black;
+ }
+
+ #actif{
+   background-color: white;
+ }
+
+ #actif a{
+   color: black;
+ }
+
+/*FIN MENU*/
+
+ /*MODAL LAISSÉ ICI À CAUSE DE L'INVERSION NOIR ET BLANC*/
+
+ .modal-content{
+   color: black;
+   font-family: 'Zara-Regular';
+   border: 1px solid white;
+ }
+
+ button.trigger{
+   background-color: white;
+ }
+
+ #logofonderiedownload{
+   filter: none!important;
+   -webkit-filter: none!important;
+   -moz-filter: none!important;
+   -o-filter: none!important;
+   -ms-filter: none!important;
+ }
+
+ #textModal a{
+   color:black;
+ }
+
+ #newsletter{
+   background-color: black;
+   color: white;
+ }
+
+ .button{
+   background-color: white;
+   color: black;
+ }
+
+ /*FIN MODAL*/
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  svg {
+    height: 450px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  svg {
+    height: 500px;
+  }
+}
+
+@media (min-width: 800px) {
+  svg {
+    height: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menuContainer {
+    margin-left: calc( ( 100vw - 186px ) / 2);
+    right: auto;
+  }
+  #mireMiddleTop{
+    display: none;
+  }
+  .modal-content{
+    width: 65vw;
+    height: 76vh;
+  }
+  #textModal{
+    font-size: 2.6vw;
+    line-height: 3.1vw;
+  }
+  #newsletter{
+    width: 100%;
+    margin-left:0%;
+  }
+}
+
+/*MOBILE*/
+@media all and (max-device-width: 480px)
+{
+
+#mireMiddleTop{
+    display: block;
+  }
+
+#devant, #derriere, #courbes, #texteTribalium, #button_download{
+  display: none;
+}
+
+#mobile{
+  display: block;
+}
+
+body{
+  background-color: yellow;
+  width: 100%;
+  position: absolute;
+  line-height: normal;
+  font-family: 'Zara-Regular';
+  color: black;
+}
+
+#logofonderiedownload{
+  width: calc( 100vw - 86px );
+  margin-left: 43px;
+  margin-top: 52px;
+}
+
+#about{
+  margin-bottom: 86px;
+}
+
+h1{
+  font-weight: normal;
+  text-align: center;
+  font-size: 8vw;
+  border: 1px solid black;
+  border-radius: 600px;
+  background-color: white;
+  padding: 3%;
+  width: 25%;
+  margin: auto;
+  margin-top: 17vh;
+}
+
+.show, .show2{
+  display: none;
+}
+
+#textModal{
+  margin: 43px;
+  font-size: 5.4vw;
+  line-height: 7.2vw;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#textModal p {
+  margin-bottom: 15px;
+}
+
+#newsletter{
+  width: calc( 100vw - 84px );
+  margin-left: 42px;
+  margin-bottom: 43px;
+}
+
+.mc-field-group{
+  margin-top: 1vh;
+}
+
+.mc-field-group label{
+  font-size: 5vw;
+  margin-top: 2%;
+}
+
+.required-email{
+  width: 90%;
+  margin-left: 5%;
+  font-size: 5vw;
+  margin-top: 8%;
+  height: 50px!important;
+  border-radius: 0px;
+}
+
+.title{
+  height: auto;
+  margin-top: 80px;
+}
+
+.button{
+  font-size: 8vw;
+  border: 1px solid black;
+  border-radius: 600px;
+  background-color: white;
+  padding: 3%;
+  width: 62%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+h2{
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.show2 h2{
+  margin-left: 43px;
+  font-weight: normal;
+  font-size: 8vw;
+  margin-bottom: 2vh;
+}
+
+#button_download2{
+  display: inline-block;
+  position: inherit;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'menu-Regular';
+  color: black;
+  font-size: 31px;
+  overflow: auto;
+  margin-left: 3vw;
+  transform: none;
+  margin-bottom: -2.3vh;
+
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-duration: 1s;
+  animation-delay: 4s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#button_download2:hover{
+  display: inline-block;
+  position: inherit;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'menu-Regular';
+  color: black;
+  font-size: 31px;
+  overflow: auto;
+  margin-left: 3vw;
+  transform: none;
+  margin-bottom: -2.3vh;
+  animation: none;
+}
+
+.show2 input{
+  width: calc( 100vw - 84px );
+  margin-left: 42px;
+  height: 70px;
+  font-size: 9vw!important;
+  padding: 3%;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.show2 input:last-child{
+  margin-top: 2vh!important;
+}
+
+.firstInput{
+  margin-top: 10px;
+}
+
+#credible{
+  font-family: 'Credible-Regular';
+}
+
+#credible input{
+  font-family: 'Credible-Regular';
+}
+
+#garamondt{
+  font-family: 'Garamondt-Regular';
+}
+
+#garamondt input{
+  font-family: 'Garamondt-Regular';
+}
+
+#garamondt input:last-child{
+  font-family: 'Garamondt-Italic';
+}
+
+#tribaliumneue{
+  font-family: 'TribaliumNeue-Regular';
+}
+
+#tribaliumneue input{
+  font-family: 'TribaliumNeue-Regular';
+}
+
+#tribaliumneue input:last-child{
+  font-family: 'TribaliumNeue-Poster';
+}
+
+#zara{
+  font-family: 'Zara-Regular';
+}
+
+#zara input{
+  font-family: 'Zara-Regular';
+}
+
+#zara input:last-child{
+  font-family: 'Zara-Oblique';
+}
+
+.button:hover{
+  animation: none;
+}
+
+#button_download2:hover .picto {
+  display: block;
+  animation: none;
+}
+
+#button_download2:active{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+h1:active{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+mc-embedded-subscribe:active{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.picto, .picto:visited{
+  color: black;
+  text-align: center;
+}
