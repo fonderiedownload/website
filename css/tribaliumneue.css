@@ -179,9 +179,9 @@ input:focus{
 
 .text {
   color: white;
-  font-size: 22px;
+  font-size: 24px;
   font-family: "TribaliumNeue-Regular";
-  padding-top: 26px;
+  padding-top: 25px;
 }
 
 @-webkit-keyframes spinner {
