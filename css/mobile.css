@@ -6,7 +6,7 @@
     display: block;
   }
 
-#common-template, #devant, #devant2, #derriere, #courbes, #container, #fond-barre, #grand-perso, #fixed, #texteTribalium, #button_download{
+#common-template, #devant, #devant2, #derriere, #courbes, #container, #fond-barre, #grand-perso, #fixed, #texteTribalium, #button_download, #stickers{
   display: none;
 }
 
@@ -21,6 +21,7 @@ body{
   line-height: normal;
   font-family: 'Zara-Regular';
   color: black;
+  overflow-y:scroll;
 }
 
 #logofonderiedownload{
