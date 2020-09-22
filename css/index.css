@@ -16,17 +16,18 @@ body{
   position: absolute;
 }
 
-#button_quarantype{
+#button_download{
   position: fixed;
-  width: 250px;
+  width: 70px;
+  height: 70px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#button_quarantype:hover{
+#button_download:hover{
   cursor: pointer;
-  filter: invert(1);
+    width: 350px;
 }
 
 .text {
@@ -155,6 +156,7 @@ body{
 #zonefonte{
   position: fixed;
   height: 100vh;
+  overflow-y: scroll;
 }
 
 #conteneur1, #conteneur2{
@@ -187,16 +189,4 @@ body{
     width: 100%;
     margin-left:0%;
   }
-}
-
-/*SPECIAL COVID A ENLEVER*/
-#COVID{
-  z-index:8001;
-  position: fixed;
-  bottom: 43px;
-  left: -40px;
-}
-#COVID img{
-  width:70vw;
-  transform: rotate(0deg);
 }
