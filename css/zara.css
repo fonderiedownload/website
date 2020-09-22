@@ -550,16 +550,16 @@ h2{
   font-family: 'Garamondt-Italic';
 }
 
-#tribalium{
-  font-family: 'Tribalium-Regular';
+#tribaliumneue{
+  font-family: 'TribaliumNeue-Regular';
 }
 
-#tribalium input{
-  font-family: 'Tribalium-Regular';
+#tribaliumneue input{
+  font-family: 'TribaliumNeue-Regular';
 }
 
-#tribalium input:last-child{
-  font-family: 'Tribalium-Poster';
+#tribaliumneue input:last-child{
+  font-family: 'TribaliumNeue-Poster';
 }
 
 #zara{
