@@ -4,7 +4,7 @@
 
 #gallery > .grid-col {
   flex: 1 0 0;
-  margin: 0 21.5px;
+  margin: 0 10.75px;
 }
 
 #gallery > .grid-col:first-child {
@@ -16,7 +16,7 @@
 }
 
 .grid-col img.grid-item {
-  margin-bottom: 43px;
+  margin-bottom: 21.5px;
 }
 
 #slidedeck {
