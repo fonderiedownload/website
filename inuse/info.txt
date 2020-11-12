@@ -1,9 +1,9 @@
-001.jpg: credible, zara ; PD La Revue ; Ariel Martín Pérez
-002.jpg: garamondt ; Fictional poster ; Thomas Carlotti
-003.jpg: tribalium ; La Gousse #28 ; Cécile Bouffard, Roxanne Maillet, Barbara Quintin
-004.jpg: quarantype ; Vinyl Party ; Alexis Faudot
-005.jpg: tribalium ; Iceberg ; Eirveibei
-006.jpg: garamondt ; Andrea Crews jean custom workshop ; Anouk Lou, Léonie Montjarret
-007.jpg: garamondt ; For the Nature ; Mike Winkelmann
-008.jpg: garamondt ; To Sustain the Vision ; Roxanne Maillet
-009.jpg: garamondt ; Sartorial ; Marcus DuBois 
+001.jpg: Crédible, Zara ; PD La Revue ; Ariel Martín Pérez
+002.jpg: Garamon(d/t) ; Fictional poster ; Thomas Carlotti
+003.jpg: Tribalium ; La Gousse #28 ; Cécile Bouffard, Roxanne Maillet, Barbara Quintin
+004.jpg: Quarantype ; Vinyl Party ; Alexis Faudot
+005.jpg: Tribalium ; Iceberg ; Eirveibei
+006.jpg: Garamon(d/t) ; Andrea Crews jean custom workshop ; Anouk Lou, Léonie Montjarret
+007.jpg: Garamon(d/t) ; For the Nature ; Mike Winkelmann
+008.jpg: Garamon(d/t) ; To Sustain the Vision ; Roxanne Maillet
+009.jpg: Garamon(d/t) ; Sartorial ; Marcus DuBois 
