@@ -246,6 +246,7 @@ body{
   #tags { flex-wrap: wrap }
   .button-tags { flex: 0 0 27%; font-size: 2vw }
   .button-tags:first-child { margin-bottom: 21.5px }
+  .button-tags:last-child { margin-top: 21.5px }
   #slidedeck-flex-container > div { flex: 2 0 0 }
   #slidedeck-flex-container > div:first-child, #slidedeck-flex-container > div:last-child { display: flex; flex: 1 0 0; font-size: 80px }
   #slidedeck-flex-container div:nth-child(2) div { font-size: 2vw; line-height: 2.5vw;}
