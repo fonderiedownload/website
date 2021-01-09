@@ -4,6 +4,8 @@
 004.jpg: quarantype ; Vinyl Party ; Alexis Faudot
 005.jpg: tribalium ; Iceberg ; Eirveibei
 006.jpg: garamondt ; Andrea Crews jean custom workshop ; Anouk Lou, Léonie Montjarret
-007.jpg: garamondt ; For the Nature ; Mike Winkelmann
-008.jpg: garamondt ; To Sustain the Vision ; Roxanne Maillet
-009.jpg: garamondt ; Sartorial ; Marcus DuBois 
+007.jpg: garamondt ; To Sustain the Vision ; Roxanne Maillet
+008.jpg: garamondt ; Sartorial ; Marcus DuBois 
+009.jpg: garamondt ; Enter Promocode ; Sofia Braga
+010.jpg: garamondt ; Enter Promocode ; Sofia Braga
+011.jpg: garamondt ; Enter Promocode ; Sofia Braga
