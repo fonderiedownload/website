@@ -301,6 +301,11 @@ button.trigger{
   -webkit-animation-iteration-count: infinite;
 }
 
+#ps{
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 10%;
+}
 /*FIN MODAL*/
 
 /*ANIMATIONS*/
