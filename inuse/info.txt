@@ -6,9 +6,9 @@
 006.jpg: garamondt ; Andrea Crews jean custom workshop ; Anouk Lou, Léonie Montjarret
 007.jpg: garamondt ; To Sustain the Vision ; Roxanne Maillet
 008.jpg: garamondt ; Sartorial ; Marcus DuBois 
-0090.jpg: garamondt ; Enter Promocode ; Sofia Braga
-0100.jpg: garamondt ; Enter Promocode ; Sofia Braga
-0110.jpg: garamondt ; Enter Promocode ; Sofia Braga
+009.jpg: garamondt ; Enter Promocode ; Sofia Braga
+010.jpg: garamondt ; Enter Promocode ; Sofia Braga
+011.jpg: garamondt ; Enter Promocode ; Sofia Braga
 012.jpg: 4fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
 013.jpg: 4fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
 014.jpg: 4fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
