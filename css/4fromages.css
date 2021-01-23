@@ -25,10 +25,10 @@ body{
 }
 
 @keyframes changement {
-  from { font-family: '4Fromages-Granapadano'; }
-  20% { font-family: '4Fromages-Cheddar'; }
-  40% { font-family: '4Fromages-Gorgonzola'; }
-  60% { font-family: '4Fromages-Parmigiano'; }
+  from { font-family: '4Fromages-Parmigiano'; }
+  20% { font-family: '4Fromages-Granapadano'; }
+  40% { font-family: '4Fromages-Cheddar'; }
+  60% { font-family: '4Fromages-Gorgonzola'; }
   to { font-family: "4Fromages-4Fromages(1)"; }
 }
 
@@ -36,12 +36,12 @@ body{
   -webkit-animation-name: changement;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 5s;
 
   animation-name: changement;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-duration: 5s;
 }
 
 /*RESPONSIVE*/
