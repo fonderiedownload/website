@@ -26,9 +26,11 @@ body{
 }
 
 @keyframes changement {
-  from { font-family: Arial; color: red; }
-  50% { font-family: Verdana; color: green; }
-  to { font-family: "4Fromages"; color: yellow; }
+  from { font-family: "4Fromages-Parmigiano"; }
+  20% { font-family: '4Fromages-Gorgonzola'; }
+  40% { font-family: '4Fromages-Granapadano'; }
+  60% { font-family: '4Fromages-Cheddar'; }
+  to { font-family: "4Fromages-4Fromages(1)"; }
 }
 
  #container{
