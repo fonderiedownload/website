@@ -2,7 +2,6 @@ body{
   font-family: 'Zara-Regular';
   height: 100vh;
   top: 0px;
-  overflow: hidden;
 }
 
 #devant2{
@@ -21,27 +20,94 @@ body{
 #container{
   text-align: center;
   padding:43px;
-  font-size: 100px;
 }
 
-@keyframes changement {
-  from { font-family: '4Fromages-Parmigiano'; }
-  20% { font-family: '4Fromages-Granapadano'; }
-  40% { font-family: '4Fromages-Cheddar'; }
-  60% { font-family: '4Fromages-Gorgonzola'; }
-  to { font-family: "4Fromages-4Fromages(1)"; }
+#wrap-cube {
+    position:fixed;
+    width: 40vw;
+    height: 40vw;
+    margin-left:30vw;
+}
+#cube {
+    width: 40vw;
+    height: 40vw;
+    font-family:'4Fromages';
+    transform-style: preserve-3d;
+    transform: rotateX(-22deg) rotateY(68deg) rotateZ(0deg);
+    margin: auto;
+    position: relative;
+    top:100px;
+    transition: all 0.5s ease-in-out;
+    animation: cubeRotation 5s infinite;
+    }
+
+    /* Standard syntax */
+    @keyframes cubeRotation {
+        0%   {	transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);	}
+        50%   {	transform: rotateX(-22deg) rotateY(-238deg) rotateZ(0deg);	}
+        100%   {	transform: rotateX(-22deg) rotateY(-398deg) rotateZ(0deg);	}
+    }
+
+#cube div {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+    background-color:white;
 }
 
- #container{
-  -webkit-animation-name: changement;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 5s;
+#side1 {
+  border:1px solid black;
+    transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(20vw);
+  width:5vw!important;
+  writing-mode: vertical-rl;
+}
+#side2 {
+  border:1px solid black;
+    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(20vw);
+}
+#side3 {
+  border:1px solid black;
+    transform: translateX(0px) translateY(0px) translateZ(20vw);
+  width:5vw!important;
+  writing-mode:sideways-rl;
+}
+#side4 {
+  border:1px solid black;
+    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(-15vw);
+}
+#side5 {
+  border:1px solid black;
+    transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(20vw);
+  width:5vw!important;
+  writing-mode: vertical-rl;
+}
+#side6 {
+  border:1px solid black;
+    transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(20vw);
+  width:5vw!important;
+  writing-mode: vertical-rl;
+}
 
-  animation-name: changement;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
+#side2 div, #side4 div{
+  font-size:38vw;
+  line-height:32.25vw;
+}
+
+#cube div{
+  text-align:center;
+  font-size:40px;
+}
+
+#back{
+  z-index: -2;
+}
+
+#back p {
+  font-family:'4Fromages';
+  text-align:justify;
+  font-size:7vw;
+  line-height: 7.5vw;
 }
 
 /*RESPONSIVE*/
