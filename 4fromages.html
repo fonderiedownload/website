@@ -18,7 +18,13 @@
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script type="text/javascript">
 
+    $(document).on('mouseenter', '.zone-clic1', function(){
+      $("#back").addClass("font-granapadano");
+    });
 
+    $(document).on('mouseleave', '.zone-clic1', function(){
+      $("#back").removeClass("font-granapadano");
+    });
 
     </script>
   </head>

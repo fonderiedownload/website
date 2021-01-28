@@ -22,15 +22,12 @@ body{
   padding:43px;
 }
 
-
-
 #zone-clic{
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
   z-index: 10;
   position: fixed;
-  transform: rotate(45deg);
-  top: -25%;
+  transform: rotate(45deg) scale(2);
 }
 
 #zone-clic div{
@@ -135,17 +132,19 @@ body{
 
 #back{
   z-index: -2;
+  transition: all 0.25s ease-in-out;
 }
 
 #back p {
-  font-family:'4Fromages';
+  font-family:'4Fromages-4Fromages(1)';
   text-align:justify;
   font-size:7vw;
   line-height: 7.5vw;
 }
 
 .font-granapadano{
-  font-family: "Arial";
+  color:pink;
+  font-family: 'Arial';
 }
 
 
