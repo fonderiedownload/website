@@ -18,13 +18,8 @@
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script type="text/javascript">
 
-        $(document).on('mouseenter', '#actif', function(){
-				$("#actif img").css({"filter":"invert(0)"});
-			});
 
-			$(document).on('mouseleave', '#actif', function(){
-        $("#actif img").css({"filter":"invert(1)"});
-			});
+
     </script>
   </head>
   <body>
@@ -84,6 +79,9 @@
           <img id="mireMiddleBottom" class="pad"src="img/mire.png">
           <img id="coinBottomRight" src="img/coin.png">
         </div>
+      </div>
+      <div id="zone-clic">
+          <div class="zone-clic1"></div><div class="zone-clic2"></div><div class="zone-clic3"></div><div class="zone-clic4"></div>
       </div>
       <div id="container">
         <div id="wrap-cube">

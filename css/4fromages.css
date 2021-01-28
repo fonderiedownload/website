@@ -22,6 +22,40 @@ body{
   padding:43px;
 }
 
+
+
+#zone-clic{
+  width: 100vw;
+  height: 100vw;
+  z-index: 10;
+  position: fixed;
+  transform: rotate(45deg);
+  top: -25%;
+}
+
+#zone-clic div{
+  width: 50%;
+  height: 50%;
+  opacity: 0.5;
+  display: inline-block;
+}
+
+.zone-clic1{
+  background-color: green;
+}
+
+.zone-clic2{
+  background-color: pink;
+}
+
+.zone-clic3{
+  background-color: yellow;
+}
+
+.zone-clic4{
+  background-color: blue;
+}
+
 #wrap-cube {
     position:fixed;
     width: 40vw;
@@ -109,6 +143,12 @@ body{
   font-size:7vw;
   line-height: 7.5vw;
 }
+
+.font-granapadano{
+  font-family: "Arial";
+}
+
+
 
 /*RESPONSIVE*/
 
