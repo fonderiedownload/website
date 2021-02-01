@@ -39,10 +39,11 @@
 }
 
 @font-face {
-  font-family: 'menu-Regular';
-  src: url('menu-Regular.eot?#iefix') format('embedded-opentype'),  url('menu-Regular.woff') format('woff'), url('menu-Regular.ttf')  format('truetype'), url('menu-Regular.svg#menu-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'menu-Regular';
+    src: url('menu-regular-webfont.woff2') format('woff2'),
+         url('menu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
