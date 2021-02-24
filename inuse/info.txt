@@ -1,22 +1,22 @@
-001.jpg: credible, zara ; PD La Revue ; Ariel Martín Pérez
-002.jpg: garamondt ; Fictional poster ; Thomas Carlotti
-003.jpg: tribalium ; La Gousse #28 ; Cécile Bouffard, Roxanne Maillet, Barbara Quintin
-004.jpg: quarantype ; Vinyl Party ; Alexis Faudot
-005.jpg: tribalium ; Iceberg ; Eirveibei
-006.jpg: garamondt ; Andrea Crews jean custom workshop ; Anouk Jeanningros, Léonie Montjarret
-007.jpg: garamondt ; To Sustain the Vision ; Roxanne Maillet
-008.jpg: garamondt ; Sartorial ; Marcus DuBois 
-009.jpg: garamondt ; Enter Promocode ; Sofia Braga
-010.jpg: garamondt ; Enter Promocode ; Sofia Braga
-011.jpg: garamondt ; Enter Promocode ; Sofia Braga
-012.jpg: 4fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
-013.jpg: 4fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
-014.jpg: 4fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
-015.jpg: 4fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
-016.jpg: 4fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski (photographed by Nora Heinisch)
-017.jpg: 4fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski (photographed by Nora Heinisch)
-018.jpg: garamondt ; Journée portes ouvertes de l’ENSAD Nancy ; Jimmy Cintero, Jules Durand, Mariel Nils
-019.jpg: garamondt ; Journée portes ouvertes de l’ENSAD Nancy ; Jimmy Cintero, Jules Durand, Mariel Nils
-020.jpg: garamondt ; Journée portes ouvertes de l’ENSAD Nancy ; Jimmy Cintero, Jules Durand, Mariel Nils
-021.jpg: garamondt ; Is graphic design too trendy? It's Nice That ; Elsa Müller
-022.jpg: zara ; Next Cloud Residency ; Sofia Braga
+001.jpg: Crédible, Zara ; PD La Revue ; Ariel Martín Pérez
+002.jpg: Garamon(d/t) ; Fictional poster ; Thomas Carlotti
+003.jpg: Tribalium ; La Gousse #28 ; Cécile Bouffard, Roxanne Maillet, Barbara Quintin
+004.jpg: Quarantype ; Vinyl Party ; Alexis Faudot
+005.jpg: Tribalium ; Iceberg ; Eirveibei
+006.jpg: Garamon(d/t) ; Andrea Crews jean custom workshop ; Anouk Jeanningros, Léonie Montjarret
+007.jpg: Garamon(d/t) ; To Sustain the Vision ; Roxanne Maillet
+008.jpg: Garamon(d/t) ; Sartorial ; Marcus DuBois
+009.jpg: Garamon(d/t) ; Enter Promocode ; Sofia Braga
+010.jpg: Garamon(d/t) ; Enter Promocode ; Sofia Braga
+011.jpg: Garamon(d/t) ; Enter Promocode ; Sofia Braga
+012.jpg: 4 fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
+013.jpg: 4 fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
+014.jpg: 4 fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
+015.jpg: 4 fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski
+016.jpg: 4 fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski (photographed by Nora Heinisch)
+017.jpg: 4 fromages ; Plasma magazine n°5 ; Studio Laurens Bauer & David Benski (photographed by Nora Heinisch)
+018.jpg: Garamon(d/t) ; Journée portes ouvertes de l’ENSAD Nancy ; Jimmy Cintero, Jules Durand, Mariel Nils
+019.jpg: Garamon(d/t) ; Journée portes ouvertes de l’ENSAD Nancy ; Jimmy Cintero, Jules Durand, Mariel Nils
+020.jpg: Garamon(d/t) ; Journée portes ouvertes de l’ENSAD Nancy ; Jimmy Cintero, Jules Durand, Mariel Nils
+021.jpg: Garamon(d/t) ; Is graphic design too trendy? It's Nice That ; Elsa Müller
+022.jpg: Zara ; Next Cloud Residency ; Sofia Braga

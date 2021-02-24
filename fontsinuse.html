@@ -81,13 +81,13 @@ Special thanks to Romain for his help!!
         <p><a href="mailto:contact@fonderie.download">Send us a mail</a> if you want your work to be featured.</p>
       </div>
       <div id="tags">
-        <button class="button-selected button-tags" id="button-all">All</button>
-        <button class="button-tags" id="button-4fromages">4 Fromages</button>
-        <button class="button-tags" id="button-credible">Crédible</button>
-        <button class="button-tags" id="button-garamondt">Garamon(d/t)</button>
-        <button class="button-tags" id="button-quarantype">Quarantype</button>
-        <button class="button-tags" id="button-tribalium">Tribalium</button>
-        <button class="button-tags" id="button-zara">Zara</button>
+        <button class="button-selected button-tags" data-font="all">All</button>
+        <button class="button-tags" data-font="4 fromages">4 Fromages</button>
+        <button class="button-tags" data-font="Crédible">Crédible</button>
+        <button class="button-tags" data-font="Garamon(d/t)">Garamon(d/t)</button>
+        <button class="button-tags" data-font="Quarantype">Quarantype</button>
+        <button class="button-tags" data-font="Tribalium">Tribalium</button>
+        <button class="button-tags" data-font="Zara">Zara</button>
       </div>
     </div>
     <div id="gallery" class="grid">
@@ -192,19 +192,19 @@ Special thanks to Romain for his help!!
   }
   displayGallery(window.images)
 
-  const onTypoButtonClicked = (event, id) => {
+  const onTypoButtonClicked = (event, fontName) => {
     document.querySelector('.button-selected').classList.toggle('button-selected')
     event.target.classList.add('button-selected')
-    const isAllButton = id === 'all'
+    const isAllButton = fontName === 'all'
     if (isAllButton) displayGallery(window.images)
     else {
-      displayGallery(window.images.filter(({tags}) => tags && tags.includes(id)))
+      displayGallery(window.images.filter(({tags}) => tags && tags.includes(fontName)))
     }
   }
 
-  Array.from(document.querySelectorAll('[id^="button"]')).forEach(button => {
-    const id = button.id.match(/button-(.*)/)[1]
-    document.querySelector(`#button-${id}`).addEventListener('click', (e) => onTypoButtonClicked(e, id))
+  Array.from(document.querySelectorAll('button[data-font]')).forEach(button => {
+    const fontName = button.dataset.font
+    button.addEventListener('click', (e) => onTypoButtonClicked(e, fontName))
   })
 
   window.addEventListener('keydown', ({ keyCode }) => {
