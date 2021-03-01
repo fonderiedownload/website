@@ -269,3 +269,9 @@ mc-embedded-subscribe:active{
   color: black;
   text-align: center;
 }
+
+#ps-mobile{
+  font-size: 3.5vw;
+  text-align: center;
+  margin-bottom: 30%;
+}
