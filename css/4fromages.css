@@ -153,13 +153,6 @@ body{
   line-height: 7.5vw;
 }
 
-.font-granapadano{
-  color: pink;
-  font-family: 'Arial';
-}
-
-
-
 /*RESPONSIVE*/
 
 @media (max-width: 600px) {
