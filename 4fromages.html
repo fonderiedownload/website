@@ -83,9 +83,9 @@
         <div id="wrap-cube">
         	<div id="cube">
         		<div id="side1" style="background-color:red">4 fromages</div>
-        		<div id="side2"><div id="display-side-2"></div></div>
+        		<div id="side2"><div id="display-side-2">A</div></div>
         		<div id="side3"style="background-color:pink">4 fromages</div>
-        		<div id="side4"><div id="display-side-4"></div></div>
+        		<div id="side4"><div id="display-side-4">B</div></div>
         		<div id="side5"style="background-color:yellow">4 fromages</div>
         		<div id="side6"style="background-color:blue">4 fromages</div>
         	</div>
@@ -203,10 +203,21 @@
   var tourneSide2 = setInterval(random, 5000);
   function random() {
     var glyphes = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
-    "0","1","2","3","4","5","6","7","8","9",
+    "0","1","2","3","4","5","6","7","8","9","Æ","Œ",".",",","?","!","$","€","@","&"
     ];
     var randomGlyphes = glyphes[Math.floor(Math.random()*glyphes.length)];
     document.getElementById("display-side-2").innerHTML = randomGlyphes ;
   }
   </script>
+  <script>
+  var tourneSideBis = setInterval(random, 5000);
+  function randomBis() {
+    var glyphesBis = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+    "0","1","2","3","4","5","6","7","8","9","Æ","Œ",".",",","?","!","$","€","@","&"
+    ];
+    var randomGlyphesBis = glyphesBis[Math.floor(Math.random()*glyphesBis.length)];
+    document.getElementById("display-side-4").innerHTML = randomGlyphesBis ;
+  }
+  </script>
+
 </html>
