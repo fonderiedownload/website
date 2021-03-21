@@ -30,7 +30,7 @@ body{
   transform: rotate(45deg) scale(2);
 }
 
-.zone-centre{
+#zonecentre{
   width: 20vw;
   height: 20vw;
   z-index: 11;
@@ -48,19 +48,19 @@ body{
   display: inline-block;
 }
 
-.zone-clic1{
+#znun{
   background-color: green;
 }
 
-.zone-clic2{
+#zone-clic2{
   background-color: pink;
 }
 
-.zone-clic3{
+#zone-clic3{
   background-color: yellow;
 }
 
-.zone-clic4{
+#zone-clic4{
   background-color: blue;
 }
 
@@ -145,10 +145,10 @@ body{
 #back{
   z-index: -2;
   transition: all 0.25s ease-in-out;
+  font-family:'4Fromages-4Fromages(1)';
 }
 
 #back p {
-  font-family:'4Fromages-4Fromages(1)';
   text-align:justify;
   font-size:7vw;
   line-height: 7.5vw;

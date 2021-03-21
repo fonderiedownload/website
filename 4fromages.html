@@ -75,19 +75,19 @@
           <img id="coinBottomRight" src="img/coin.png">
         </div>
       </div>
-      <div class="zone-centre"></div>
+      <div id="zonecentre"></div>
       <div id="zone-clic">
-          <div class="zone-clic1"></div><div class="zone-clic2"></div><div class="zone-clic3"></div><div class="zone-clic4"></div>
+          <div id="znun"></div><div id="zone-clic2"></div><div id="zone-clic3"></div><div id="zone-clic4"></div>
       </div>
       <div id="container">
         <div id="wrap-cube">
         	<div id="cube">
-        		<div id="side1" style="background-color:red">4 fromages</div>
+        		<div id="side1">4 fromages</div>
         		<div id="side2"><div id="display-side-2">A</div></div>
-        		<div id="side3"style="background-color:pink">4 fromages</div>
+        		<div id="side3">4 fromages</div>
         		<div id="side4"><div id="display-side-4">B</div></div>
-        		<div id="side5"style="background-color:yellow">4 fromages</div>
-        		<div id="side6"style="background-color:blue">4 fromages</div>
+        		<div id="side5">4 fromages</div>
+        		<div id="side6">4 fromages</div>
         	</div>
         </div>
         <div id="back">
@@ -199,6 +199,22 @@
 
 
   </script>
+  <script type="text/JavaScript">
+
+  let zonecentre=document.getElementById('zonecentre')
+
+  let back=document.getElementById('back')
+
+  zonecentre.onmouseover=function(){
+    back.style.fontFamily='Times'
+  }
+
+  zonecentre.onmouseout=function(){
+    back.style.fontFamily='Verdana'
+  }
+
+
+  </script>
   <script>
   var tourneSide2 = setInterval(random, 5000);
   function random() {
@@ -209,14 +225,8 @@
     document.getElementById("display-side-2").innerHTML = randomGlyphes ;
   }
 
-  var tourneSideBis = setInterval(random, 5000);
-  function randomBis() {
-    var glyphesBis = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
-    "0","1","2","3","4","5","6","7","8","9","Æ","Œ",".",",","?","!","$","€","@","&"
-    ];
-    var randomGlyphesBis = glyphesBis[Math.floor(Math.random()*glyphesBis.length)];
-    document.getElementById("display-side-4").innerHTML = randomGlyphesBis ;
-  }
   </script>
+
+
 
 </html>
