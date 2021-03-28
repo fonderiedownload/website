@@ -212,6 +212,36 @@ body{
   transform: rotate(360deg);
 }
 
+[data-font="all"]{
+  font-family:'Zara-Regular';
+}
+
+[data-font="4 fromages"]{
+  font-family:'4Fromages-Regular';
+  font-size: 0.9vw;
+}
+
+[data-font="Crédible"]{
+  font-family:'Credible-Regular';
+}
+
+[data-font="Garamon(d/t)"]{
+  font-family:'Garamondt-Regular';
+  line-height: 4vw;
+}
+
+[data-font="Quarantype"]{
+  font-family:'Quarantype-Regular';
+}
+
+[data-font="Tribalium"]{
+  font-family:'Tribalium-Regular';
+  line-height: 4.3vw;
+}
+
+[data-font="Zara"]{
+  font-family:'Zara-Regular';
+}
 
 /*RESPONSIVE MENU*/
 @media (max-width: 600px) {

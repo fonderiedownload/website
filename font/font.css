@@ -95,9 +95,7 @@
 @font-face {
     font-family: '4Fromages-Regular';
     src:
-         url('4Fromages-Regular.otf') format('otf'),
-         url('4Fromages-Regular.woff2') format('woff2'),
-         url('4Fromages-Regular.woff') format('woff');
+         url('4Fromages-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
