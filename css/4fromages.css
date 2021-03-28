@@ -73,7 +73,7 @@ body{
 #cube {
     width: 40vw;
     height: 40vw;
-    font-family:'4Fromages';
+    font-family:'4Fromages-Regular';
     transform-style: preserve-3d;
     transform: rotateX(-22deg) rotateY(68deg) rotateZ(0deg);
     margin: auto;
@@ -138,20 +138,25 @@ body{
 }
 
 #side2 div, #side4 div{
-  font-size: 29vw;
+  font-size: 28vw;
   line-height: 24vw;
 }
 
 #back{
   z-index: -2;
   transition: all 0.25s ease-in-out;
-  font-family:'4Fromages-4Fromages(1)';
+  font-family:'4Fromages-Regular';
 }
 
 #back p {
   text-align:justify;
   font-size:7vw;
   line-height: 7.5vw;
+}
+
+.text{
+  font-family:'4Fromages-Regular';
+  font-size: 2.5vw;
 }
 
 /*RESPONSIVE*/

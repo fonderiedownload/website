@@ -93,36 +93,11 @@
 }
 
 @font-face {
-  font-family: '4Fromages-4Fromages(1)';
-  src: url('4Fromages-4Fromages(1).woff2') format('woff2'),
-       url('4Fromages-4Fromages(1).woff') format('woff'),
-       url('4Fromages-4Fromages(1).ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: '4Fromages-Gorgonzola';
-  src: url('4Fromages-Gorgonzola.woff2') format('woff2'),
-       url('4Fromages-Gorgonzola.woff') format('woff'),
-       url('4Fromages-Gorgonzola.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: '4Fromages-Parmigiano';
-  src: url('4Fromages-Parmigiano.woff2') format('woff2'),
-       url('4Fromages-Parmigiano.woff') format('woff'),
-       url('4Fromages-Parmigiano.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: '4Fromages-Granapadano';
-  src: url('4Fromages-Granapadano.woff2') format('woff2'),
-       url('4Fromages-Granapadano.woff') format('woff'),
-       url('4Fromages-Granapadano.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: '4Fromages-Cheddar';
-  src: url('4Fromages-Cheddar.woff2') format('woff2'),
-       url('4Fromages-Cheddar.woff') format('woff'),
-       url('4Fromages-Cheddar.ttf')  format('truetype');
+    font-family: '4Fromages-Regular';
+    src:
+         url('4Fromages-Regular.otf') format('otf'),
+         url('4Fromages-Regular.woff2') format('woff2'),
+         url('4Fromages-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
