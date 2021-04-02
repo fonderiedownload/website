@@ -202,18 +202,18 @@
   <script type="text/JavaScript">
 
   let zonecentre=document.getElementById('zonecentre')
-
   let back=document.getElementById('back')
 
   zonecentre.onmouseover=function(){
-    back.style.fontFeatureSettings='ss02'
+    back.style = 'font-feature-settings: "ss02" '
   }
 
   zonecentre.onmouseout=function(){
-    back.style.fontFeatureSettings='normal'
+    back.style = 'font-feature-settings: "ss00" '
   }
 
   </script>
+
   <script>
   var tourneSide2 = setInterval(random, 5000);
   function random() {
