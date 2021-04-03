@@ -68,7 +68,9 @@ body{
     position:fixed;
     width: 40vw;
     height: 40vw;
-    margin-left:30vw;
+    left: 50%;
+    transform: translate(-50%);
+    top:25%;
 }
 #cube {
     width: 40vw;
@@ -78,7 +80,6 @@ body{
     transform: rotateX(-22deg) rotateY(68deg) rotateZ(0deg);
     margin: auto;
     position: relative;
-    top:18vh;
     transition: all 0.5s ease-in-out;
     animation: cubeRotation 5s infinite;
     }
