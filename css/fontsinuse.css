@@ -246,7 +246,6 @@ body{
 /*RESPONSIVE MENU*/
 @media (max-width: 600px) {
 
-
   .modal-content{
     width: 65vw;
     height: 76vh;
@@ -308,10 +307,12 @@ body{
 
 .menuContainer {
   top: 43px;
+  margin-left: calc( ( 100vw - 280px ) / 2);
+  right: unset;
 }
 
-#devant, #derriere{
-  display: none;
+#textheader {
+    padding-top: 129px;
 }
 
 #mobile{
