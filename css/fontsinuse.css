@@ -89,7 +89,7 @@
 
 #textheader{
   text-align: center;
-  font-family: Zara;
+  font-family: 'Zara-Regular';
   font-size: 2vw;
   font-weight: lighter;
   padding-top: 86px;
@@ -245,13 +245,8 @@ body{
 
 /*RESPONSIVE MENU*/
 @media (max-width: 600px) {
-  .menuContainer {
-    margin-left: calc( ( 100vw - 186px ) / 2);
-    right: auto;
-  }
-  #mireMiddleTop{
-    display: none;
-  }
+
+
   .modal-content{
     width: 65vw;
     height: 76vh;
@@ -308,8 +303,12 @@ body{
 {
 
 #mireMiddleTop{
-    display: block;
+    display: none;
   }
+
+.menuContainer {
+  top: 43px;
+}
 
 #devant, #derriere{
   display: none;
