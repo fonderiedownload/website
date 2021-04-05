@@ -37,14 +37,11 @@
   display: flex;
 }
 
-#slidedeck-flex-container > div {
-  flex: 1 0 0;
-}
-
 #slidedeck-flex-container div:nth-child(2) div {
   margin-top: 21px;
   font-size: 1vw;
   line-height: 1.5vw;
+  flex: 1 0 700px;
 }
 
 /* ARROWS */
@@ -54,6 +51,7 @@
   justify-content: center;
   align-items: center;
   user-select: none;
+    flex: 1 0 20%;
 }
 
 #slidedeck-flex-container > div:first-child span, #slidedeck-flex-container > div:last-child span {
