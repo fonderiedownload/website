@@ -510,3 +510,48 @@ h2{
   animation: colorchange 0.5s;
   -webkit-animation-iteration-count: infinite;
 }
+
+/* MODAL VERSION MOBILE */
+
+.modal-content {
+    width: 65vw;
+    height: calc( 100% - 117px );
+}
+
+.close-button {
+    font-size: 8.5vw;
+}
+
+#logofonderiedownload{
+  width: 100%;
+  margin: 0px;
+  margin-top: 30px;
+}
+
+#textModal{
+  margin: 43px 0px 0px 0px;
+  font-size: 4.5vw;
+  line-height: 6vw;
+}
+
+#textModal p span{
+  font-size: 3.5vw;
+}
+
+#newsletter{
+  width: 100%;
+  margin: 43px 0px 0px 0px;
+}
+
+.mc-field-group label {
+    font-size: 4.5vw;
+}
+
+.button {
+    font-size: 6vw;
+}
+
+#ps{
+  font-size:2.9vw;
+  margin-top:43px;
+}
