@@ -315,6 +315,25 @@ body{
     padding-top: 129px;
 }
 
+.button-tags{
+  flex: 0 0 48%;
+  height: 5vh;
+  margin-bottom: 10px;
+  font-size: 5vw;
+}
+
+[data-font="4 fromages"] {
+  font-size: 3.1vw;
+}
+
+.button-tags:first-child {
+    margin-bottom: 0px;
+}
+
+.button-tags:last-child {
+    margin-top: 0px;
+}
+
 #mobile{
   display: block;
 }
