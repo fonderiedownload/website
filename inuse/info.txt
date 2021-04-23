@@ -23,3 +23,5 @@
 023.jpg: Garamon(d/t) ; Un Fanzine par Mois ; Jules Tirilly
 024.jpg: Crédible ; Next Generation survey ; It's Nice That
 025.png: Crédible ; Next Generation survey ; It's Nice That
+026.jpg: Quarantype ; PD La Revue n°3 ; Ariel Martín Pérez
+
