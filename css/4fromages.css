@@ -155,6 +155,22 @@ body{
   line-height: 7.5vw;
 }
 
+#back.ss01 {
+  font-feature-settings: "ss01";
+}
+
+#back.ss02 {
+  font-feature-settings: "ss02";
+}
+
+#back.ss03 {
+  font-feature-settings: "ss03";
+}
+
+#back.ss04 {
+  font-feature-settings: "ss04";
+}
+
 .text{
   font-family:'4Fromages-Regular';
   font-size: 31px;

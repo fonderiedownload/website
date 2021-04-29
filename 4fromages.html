@@ -83,9 +83,9 @@
         <div id="wrap-cube">
         	<div id="cube">
         		<div id="side1">4 fromages</div>
-        		<div id="side2"><div id="display-side-2">A</div></div>
+        		<div id="side2"><div id="outer-side">A</div></div>
         		<div id="side3">4 fromages</div>
-        		<div id="side4"><div id="display-side-4">B</div></div>
+        		<div id="side4"><div id="inner-side">B</div></div>
         		<div id="side5">4 fromages</div>
         		<div id="side6">4 fromages</div>
         	</div>
@@ -159,27 +159,25 @@
   </body>
   <script>
 
-    var modal = document.querySelector(".modal");
-    var trigger = document.querySelector(".trigger");
-    var closeButton = document.querySelector(".close-button");
+  const modal = document.querySelector(".modal");
+  const trigger = document.querySelector(".trigger");
+  const closeButton = document.querySelector(".close-button");
 
-    function toggleModal(event) {
-        event.preventDefault();
-        modal.classList.toggle("show-modal");
+  function toggleModal(event) {
+    event.preventDefault();
+    modal.classList.toggle("show-modal");
+  }
+
+  function windowOnClick(event) {
+    if (event.target === modal) {
+      toggleModal(event);
     }
+  }
 
-    function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal(event);
-        }
-    }
+  trigger.addEventListener("click", toggleModal);
+  closeButton.addEventListener("click", toggleModal);
+  window.addEventListener("click", windowOnClick);
 
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-
-  </script>
-  <script>
   document.querySelector("#showabout").onclick = function() {
     if (window.getComputedStyle(document.querySelector('.show')).display=='none'){
       document.querySelector(".show").style.display="block";
@@ -188,53 +186,56 @@
     }
   }
 
-
-    document.querySelector("#showfonts").onclick = function() {
-      if (window.getComputedStyle(document.querySelector('.show2')).display=='none'){
-        document.querySelector(".show2").style.display="block";
-      } else {
-        document.querySelector(".show2").style.display="none";
-      }
+  document.querySelector("#showfonts").onclick = function() {
+    if (window.getComputedStyle(document.querySelector('.show2')).display=='none'){
+      document.querySelector(".show2").style.display="block";
+    } else {
+      document.querySelector(".show2").style.display="none";
     }
-
-
-  </script>
-  <script type="text/JavaScript">
-
-  let znun=document.getElementById('znun')
-  let back=document.getElementById('back')
-
-  znun.onmouseover=function(){
-    back.style = 'font-feature-settings: "ss02"; '
   }
 
-  znun.onmouseout=function(){
-    back.style = 'font-feature-settings: "ss00" '
-  }
+  const back = document.getElementById('back');
+  
+  const ids = ['zone-clic3', 'znun', 'zone-clic2', 'zone-clic4']
+  ids.forEach((id, index) => {
+    const node = document.getElementById(id)
+    const className = `ss0${index + 1}`
+    node.addEventListener('mouseover', () => {
+      back.classList.add(className)
+    })
+    node.addEventListener('mouseleave', () => {
+      back.classList.remove(className)
+    })
+  })
 
-  </script>
+  // zonecentre  font-feature-settings: "ss00"
+  // znun  font-feature-settings: "ss02"
+  // zone-clic2  font-feature-settings: "ss03"
+  // zone-clic3  font-feature-settings: "ss01"
+  // zone-clic4  font-feature-settings: "ss04"
 
-
-<!--
-zonecentre  font-feature-settings: "ss00"
-znun  font-feature-settings: "ss02"
-zone-clic2  font-feature-settings: "ss03"
-zone-clic3  font-feature-settings: "ss01"
-zone-clic4  font-feature-settings: "ss04"
--->
-
-  <script>
-  var tourneSide2 = setInterval(random, 5000);
-  function random() {
-    var glyphes = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+  const glyphes = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
     "0","1","2","3","4","5","6","7","8","9","Æ","Œ",".",",","?","!","$","€","@","&"
     ];
-    var randomGlyphes = glyphes[Math.floor(Math.random()*glyphes.length)];
-    document.getElementById("display-side-2").innerHTML = randomGlyphes ;
+  const outerSide = document.getElementById("outer-side")
+  const innerSide = document.getElementById("inner-side")
+
+  function getRandomGlyphes() {
+    return glyphes[Math.floor(Math.random()*glyphes.length)]
   }
 
+  function updateOuterSide() {
+    outerSide.innerHTML = getRandomGlyphes();
+  }
+
+  function updateInnerSide() {
+    innerSide.innerHTML = getRandomGlyphes();
+  }
+
+  setInterval(updateOuterSide, 5000);
+  setTimeout(function() {
+    updateInnerSide()
+    setInterval(updateInnerSide, 5000)
+  }, 2500);
   </script>
-
-
-
 </html>
