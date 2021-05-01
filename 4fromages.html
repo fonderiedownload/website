@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-- fonderie.download V1 may 2020
--->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -83,7 +81,7 @@
         <div id="wrap-cube">
         	<div id="cube">
         		<div id="side1">4 fromages</div>
-        		<div id="side2"><div id="outer-side">A</div></div>
+        		<div id="side2"><div id="outer-side">A</div><img id="saveur" src="img/saveur.png"></div>
         		<div id="side3">4 fromages</div>
         		<div id="side4"><div id="inner-side">B</div></div>
         		<div id="side5">4 fromages</div>
@@ -195,7 +193,7 @@
   }
 
   const back = document.getElementById('back');
-  
+
   const ids = ['zone-clic3', 'znun', 'zone-clic2', 'zone-clic4']
   ids.forEach((id, index) => {
     const node = document.getElementById(id)

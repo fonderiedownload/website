@@ -4,6 +4,14 @@ body{
   top: 0px;
 }
 
+#saveur{
+width: 80px;
+transform: rotate(6deg);
+position: fixed;
+bottom: 80px;
+right: 30px;
+}
+
 #devant2{
   width: 100%;
   height: 0px;
@@ -31,7 +39,7 @@ body{
 }
 
 #zonecentre{
-  width: 20vw;
+  width: 40vw;
   height: 20vw;
   z-index: 11;
   border-radius: 50%;
@@ -135,7 +143,7 @@ body{
 #cube div{
   text-align:center;
   font-size: 2.8vw;
-  line-height: 4.5vw;
+  line-height: 5vw;
 }
 
 #side2 div, #side4 div{
@@ -144,10 +152,16 @@ body{
 }
 
 #back{
-  z-index: -2;
-  transition: all 0.25s ease-in-out;
   font-family:'4Fromages-Regular';
+  animation: ronflex 5s infinite;
 }
+
+/*@keyframes ronflex{
+  0%  {transform: scale(0.995);}
+  25%  {transform: scale(1.005);}
+  50%  {transform: scale(1.005);}
+  100%  {transform: scale(0.995);}
+}*/
 
 #back p {
   text-align:justify;
