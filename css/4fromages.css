@@ -121,7 +121,7 @@ right: 30px;
   border:1px solid black;
     transform: translateX(0px) translateY(0px) translateZ(15vw);
   width:5vw!important;
-  writing-mode:sideways-rl;
+  writing-mode: vertical-rl;
 }
 #side4 {
   border:1px solid black;
