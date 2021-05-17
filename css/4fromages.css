@@ -222,10 +222,3 @@ right: 30px;
 }
 
 }
-
-@media all and (max-device-width: 480px)
-{
-#zone-clic{
-    display: none;
-  }
-}
