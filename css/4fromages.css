@@ -157,6 +157,22 @@ right: 30px;
   line-height: 29.5vw;
 }
 
+/* HACK SAFARI */
+
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+      #side2 {
+        border:1px solid black;
+        transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(-20vw);
+        -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(-20vw);
+      }
+      #side4 {
+        border:1px solid black;
+        transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(25vw);
+        -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(25vw);
+      }
+}}
+
 #back{
   font-family:'4Fromages-Regular';
   animation: ronflex 5s infinite;
