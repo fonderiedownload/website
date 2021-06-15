@@ -1,5 +1,53 @@
 window.images = [
 	{
+		"path": "inuse/028.jpg",
+		"tags": [
+			"Garamon(d/t)"
+		],
+		"title": "Le soleil est noir",
+		"author": "Léa Laforest"
+	},
+	{
+		"path": "inuse/027.jpg",
+		"tags": [
+			"4 fromages"
+		],
+		"title": "Plasma magazine n°5",
+		"author": "Studio Laurens Bauer & David Benski (photographed by Nora Heinisch)"
+	},
+	{
+		"path": "inuse/026.jpg",
+		"tags": [
+			"Quarantype"
+		],
+		"title": "PD La Revue n°3",
+		"author": "Ariel Martín Pérez (with a beautiful illustration by Aubrey Beardsley)"
+	},
+	{
+		"path": "inuse/025.png",
+		"tags": [
+			"Crédible"
+		],
+		"title": "Next Generation survey",
+		"author": "It's Nice That"
+	},
+	{
+		"path": "inuse/024.jpg",
+		"tags": [
+			"Crédible"
+		],
+		"title": "Next Generation survey",
+		"author": "It's Nice That"
+	},
+	{
+		"path": "inuse/023.jpg",
+		"tags": [
+			"Garamon(d/t)"
+		],
+		"title": "Un Fanzine par Mois",
+		"author": "Jules Tirilly"
+	},
+	{
 		"path": "inuse/022.jpg",
 		"tags": [
 			"Zara"
