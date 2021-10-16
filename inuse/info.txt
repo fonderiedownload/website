@@ -26,4 +26,7 @@
 025.png: Crédible ; Next Generation survey ; It's Nice That
 026.jpg: Quarantype ; PD La Revue n°3 ; Ariel Martín Pérez (with a beautiful illustration by Aubrey Beardsley)
 028.jpg: Garamon(d/t) ; Le soleil est noir ; Léa Laforest
-029.jpg:Quarantype ; smart systems™ ; Anton Abo
+029.jpg:Quarantype ; smart systems ; Anton Abo
+030.jpg: Zara ; Poltergeist ; Clear Mind Developers
+031.jpg: Zara ; Poltergeist ; Clear Mind Developers
+032.jpg: Zara ; Poltergeist ; Clear Mind Developers
