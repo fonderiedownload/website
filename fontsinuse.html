@@ -136,7 +136,7 @@ Special thanks to Romain for his help!!
     const image = slidedeck.querySelector('img')
     image.setAttribute('src', path)
     image.setAttribute('alt', title)
-    slidedeck.querySelector('img + div').innerHTML = `${title} by ${author}<br />Used font(s): ${(tags).join(', ')}`
+    slidedeck.querySelector('img + div').innerHTML = `${title} designed by ${author}<br />Used font(s): ${(tags).join(', ')}`
     slidedeck.classList.toggle('closed', false)
   }
 
