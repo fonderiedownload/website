@@ -57,7 +57,7 @@
 057.jpg: Garamon(d/t) ; Nothing New Under the Sun ; Katri Astala (photo by Anna Niskanen)
 058.jpg: Garamon(d/t) ; Sous peu il fera jour ; Alexis Faudot and Léo Gauttier
 059.jpg: Garamon(d/t) ; La Maison du jardinier; 
-060.jpg: Garamon(d/t) ; La Maison du jardinier ; Juicy Workshops ; Liudmila Savelyeva
-061.jpg: 4 fromages ; La Maison du jardinier ; HST 2022 ; Liudmila Savelyeva
+060.jpg: Garamon(d/t) ; Juicy Workshops ; Liudmila Savelyeva
+061.jpg: 4 fromages ; HST 2022 ; Liudmila Savelyeva
 
 
