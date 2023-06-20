@@ -102,7 +102,7 @@
   transform: rotate(180deg);
 }
 
-#button_download p, #button-download-index p {
+.picto, #button-download-index p {
     padding-top: 6px;
 }
 
