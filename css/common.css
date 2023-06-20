@@ -102,6 +102,10 @@
   transform: rotate(180deg);
 }
 
+#button_download p, #button-download-index p {
+    padding-top: 6px;
+}
+
 /*FIN MIRES ET TRAITS DE COUPE*/
 
 /*MENU*/
