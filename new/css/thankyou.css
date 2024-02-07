@@ -1,0 +1,143 @@
+body{
+  font-family: 'Zara-Regular';
+  height: 100vh;
+  top: 0px;
+  position: fixed;
+}
+
+#derriere{
+  width: 100vw;
+  /*height: 100%;*/
+  /*position: absolute;*/
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#derriere p{
+  font-size: 4vw;
+}
+
+#derriere p:first-child{
+  font-family:"Credible-Regular";
+  font-size: 5vw;
+  font-feature-settings: "ss03";
+}
+
+#derriere p:nth-child(2){
+  font-size: 3vw;
+  margin-top: 9.5vh;
+}
+
+#derriere a:hover{
+  animation: colorchangetext 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#top2 div {
+  display: inline-block;
+}
+
+#left{
+  width: 33%;
+}
+
+#middle{
+  text-align: center;
+  width: 33%;
+}
+
+#right {
+  text-align: right;
+  width: 33%;
+}
+
+#right p{
+  float:right;
+  -webkit-transition:  0.5s;
+  transition:  0.5s;
+}
+
+#right p:hover {
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#derriere, #zonefonte{
+  margin-top:0px!important;
+}
+
+#zonefonte{
+  position: fixed;
+  height: 100vh;
+}
+
+/*RESPONSIVE MENU*/
+
+@media (max-width: 600px) {
+  .menuContainer {
+    margin-left: calc( ( 100vw - 186px ) / 2);
+    right: auto;
+  }
+  #mireMiddleTop{
+    display: none;
+  }
+  .modal-content{
+    width: 65vw;
+    height: 76vh;
+  }
+  #textModal{
+    font-size: 2.6vw;
+    line-height: 3.1vw;
+  }
+  #newsletter{
+    width: 100%;
+    margin-left:0%;
+  }
+}
+
+
+/*MOBILE*/
+@media all and (max-device-width: 480px)
+{
+  .menuContainer{
+    display: none;
+  }
+  #mireMiddleTop{
+    display: block;
+  }
+  body{
+    background-color: yellow;
+    width: 100%;
+  }
+  #derriere{
+    display: none;
+  }
+  #mobile{
+    display: block;
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #mobile p:first-child{
+    font-family:"Credible-Regular";
+    font-size: 9.5vw;
+    line-height: 16vw;
+    font-feature-settings: "ss03";
+  }
+  #mobile p:nth-child(2){
+    font-size: 4.3vw;
+    margin-top: 4.5vh;
+    margin-bottom: 2vh;
+  }
+  #mobile p a{
+    font-size: 4vw;
+  }
+}
