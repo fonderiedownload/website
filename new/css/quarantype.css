@@ -194,3 +194,53 @@ body{
   100%  {top:-1050vh;}
 }
 }
+
+@media all and (max-device-width: 480px){
+    #sticker1, #sticker4, #sticker5{
+        display: none
+    }
+    #sticker2{
+        margin-left: -43px;
+        bottom: 43px;
+        width: 60vw;
+    }
+    #sticker3{
+        top: 16vh;
+    }
+    #h1desktop{
+        display: none;
+    }
+    #h1mobile{
+        display: block;
+        border: 0px;
+        border-radius: 0%;
+        text-align: center;
+        width: auto;
+        background-color: transparent;
+    }
+    #credits h1{
+        font-size:14vw; 
+        line-height: 15vw;
+        margin-top: 0px;
+    }
+    #credits h2 {
+        font-size: 9vw;
+        line-height: 9.9vw;
+        margin-bottom: 1.5vh;
+        width: 80vw;
+    }
+    #credits h3{
+        font-size: 13vw;
+        line-height: 9.9vw;
+        margin-bottom: 15vh;
+    }
+    .intro, .outro{
+        font-size: 6vw;
+    }
+    #credits li{
+        font-size: 7vw;
+        line-height: 8.5vw;
+    }
+ 
+
+}

@@ -107,6 +107,10 @@ body {
   animation-play-state: paused;
 }
 
+#txtInfo-mobile{
+    display: none
+}
+
 #txtInfo {
   vertical-align: text-bottom;
   font-family: 'Garamondt-Regular';
@@ -124,4 +128,42 @@ body {
   font-size: 29px;
   font-family: 'Garamondt-Regular';
   padding-top: 22px;
+}
+
+
+@media all and (max-device-width: 480px){
+    #container{
+        margin-top: 0px; 
+        margin-bottom: 0px
+    }
+    .loupe, .scene{
+        background-size: 150vw;
+    }
+    .loupe {
+        width: 800px;
+        height: 800px;
+    }
+}
+
+@media all and (max-device-width: 480px){
+    #txtInfo{
+        display: none
+    }
+    #txtInfo-mobile {
+        display: block;
+        font-family: 'Garamondt-Regular';
+        font-size: 5vw;
+        line-height: 6vw;
+        width: calc( 100vw - 86px );
+        margin-left: 43px;
+        margin-top: -10vw;
+    }
+    #imgInfo{
+        width: 50vw;
+        margin-left: 25vw;
+        margin-bottom: 50px;
+    }
+    #imgInfo img {
+        animation: none;
+    }
 }

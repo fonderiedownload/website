@@ -15,6 +15,10 @@ body{
   -ms-filter: invert(1);
 }
 
+#texteTribalium-mobile{
+    display: none;
+}
+
 /* COURBE */
 
 svg {
@@ -296,4 +300,155 @@ input:focus{
     width: 100%;
     margin-left:0%;
   }
+}
+
+@media all and (max-device-width: 480px){
+    
+    
+    
+    
+    svg{
+  width: 90vw;
+  height: 40vh;
+  display: block;
+    margin-top: 15vh;
+  animation: bounce-mobile 5s ease-in-out;
+  -moz-animation: bounce-mobile 5s ease-in-out;
+  -webkit-animation: bounce-mobile 5s  ease-in-out;
+  }
+
+@-webkit-keyframes bounce-mobile {
+  0%   {width:40vw; opacity: 0.2;}
+  100%  {width: 90vw; opacity: 1;}
+}
+
+@keyframes bounce-mobile 2
+  0%   {width:40vw; opacity: 0.2;}
+  100%  {width: 90vw; opacity: 1;}
+}
+    
+    
+    
+    
+    
+    
+    #texteTribalium{
+        display: none
+    }
+    #texteTribalium-mobile{
+        display: block;
+        width: 100vw;
+        animation: opacity 10s ease-in-out;
+        -moz-animation: opacity 10s ease-in-out;
+        -webkit-animation: opacity 10s  ease-in-out;
+    }
+
+    @-webkit-keyframes opacity {
+        0%   {opacity: 0; }
+        100%  {opacity: 1;}
+    }
+
+    @keyframes opacity {
+        0%   {opacity: 0; }
+        100%  {opacity: 1;}
+    }
+
+    #texteTribalium-mobile span{
+      animation: typo 1s infinite ease-in-out;
+      -moz-animation: typo 1s infinite ease-in-out;
+      -webkit-animation:typo 1s infinite ease-in-out;
+    }
+
+    @-webkit-keyframes typo {
+      0%   {font-family:"TribaliumNeue-Regular" ; opacity: 1;}
+      33%   {font-family:"TribaliumNeue-Poster" ; opacity: 1;}
+      66%   {font-family:"TribaliumNeue-Regular" ; opacity: 1;}
+      100%  {font-family:"TribaliumNeue-Poster"; opacity: 1 ;}
+    }
+
+    @keyframes typo {
+        0%   {font-family:"TribaliumNeue-Regular" ; opacity: 1;}
+        33%   {font-family:"TribaliumNeue-Poster" ; opacity: 1;}
+        66%   {font-family:"TribaliumNeue-Regular" ; opacity: 1;}
+        100%  {font-family:"TribaliumNeue-Poster"; opacity: 1 ;}
+    }
+
+    .ligneUn-mobile{
+      font-size: 5.2vw;
+      text-align: center;
+    }
+
+    .ligneDeux-mobile{
+      font-family: "TribaliumNeue-Poster";
+      font-size: 14.5vw;
+        line-height: 13.6vw;
+      text-align:center;
+      letter-spacing: 2px;
+    }
+
+    .esperluette-mobile{
+        margin-top: 4vw;
+        font-size: 13vw;
+        text-align: center;
+    }
+
+    .ligneTrois-mobile{
+      font-family: "TribaliumNeue-Poster";
+      font-size: 7.3vw;
+      line-height: 9.3vw;
+      text-align:center;
+      height: 5vh;
+    margin-top:30px
+    }
+    
+    .ligneTroisBis-mobile{
+        font-family: "TribaliumNeue-Poster";
+      font-size: 11.6vw;
+      line-height: 11vw;
+      text-align:center;
+      height: 12vh;
+    }
+    
+    .ligneQuatre-mobile{
+      margin-top: 7vw;
+      font-size: 4.5vw;
+      line-height: 3.5vw;
+      text-align: center;
+    }
+
+    .ligneCinq-mobile{
+      font-size: 5.9vw;
+      line-height: 11.5vw;
+      text-align: center;
+      margin-bottom: 140px;
+    }
+
+    .formulaireTribalium-mobile{
+      margin: 0 auto;
+      border: 1px solid white;
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-size: 13vw;
+      height: 22vw;
+      display: block;
+        width: calc( 100vw - 86px )
+    }
+
+    .formulaireTribalium-mobile:hover{
+      animation: colorchange 0.5s;
+      -webkit-animation-iteration-count: infinite;
+      box-shadow: 0px!important;
+    }
+
+    #regular-mobile{
+      font-family: "TribaliumNeue-Regular";
+      margin-top: 2vw;
+    }
+
+    #poster-mobile{
+      font-family: "TribaliumNeue-Poster";
+      margin-top: 2.2vw;
+      letter-spacing: 2px;
+    }
 }
