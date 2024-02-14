@@ -381,4 +381,7 @@ outline: none;
         0%   {left:140vw; top:17vh;}
         100%  {left:-10vw; top:17vh;}
     }
+    #vent, #vent2, #vent3, #vent4, #vent5, #dechet, #boulette{
+        display: none;
+    }
 }
