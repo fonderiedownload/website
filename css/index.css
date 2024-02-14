@@ -87,7 +87,7 @@ body{
 .text {
   font-size: 25px;
   font-family: "Credible-Regular";
-  padding-top: 23px;
+  padding-top: 23px!important;
 }
 
 #top2 div {
@@ -220,4 +220,46 @@ body{
     width: 100%;
     margin-left:0%;
   }
+}
+
+
+/*MOBILE*/
+@media all and (max-device-width: 480px){
+    #zonefonte{
+        width: 100vw
+    }
+    #conteneur1, #conteneur2, #conteneur3{
+        display: block;
+        width: calc( 100vw - 86px );
+        margin-left: 43px;
+        height: auto;
+    }
+
+    #conteneur1{
+        margin-top: 80px; 
+    }
+    .element {
+        padding: 20px;  
+        height: auto
+    }
+    .element:last-child{
+        margin-bottom: 43px;
+    }
+    .element img {
+        width: 100%;
+    }
+    #button-download-index{
+        right: 43px;
+        bottom: 43px;
+    }
+    #button-download-index:hover{
+        width: calc( 100vw - 86px );
+    }
+    .text{
+        font-size: 20px;
+        position: fixed;
+        top: 46%;
+        transform: translate(0%, -50%);
+        margin-left: 11px;
+    }
 }

@@ -1,0 +1,223 @@
+body{
+  font-family: 'Zara-Regular';
+  height: 100vh;
+  top: 0px;
+  position: fixed;
+}
+
+#conteneur1, #conteneur2, #conteneur3{
+  display: flex;
+}
+
+#derriere{
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+#button-download-index{
+  z-index: 3000;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  margin-top: calc( 50vh - 36px );
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'menu-Regular';
+  color: black;
+  font-size: 51px;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  transform-origin: center;
+  overflow: hidden;
+
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-duration: 1s;
+  animation-delay: 4s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#button-download-index:hover {
+  border-radius:0;
+  cursor: pointer;
+  width: 350px;
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.picto{
+  display: block;
+}
+
+.text {
+  color: black;
+  opacity: 0;
+  text-align: center;
+  padding-top:0px;
+  transition: all 0s linear;
+  transition: margin-right .3s ease-in-out;
+  margin-right: -500px;
+  animation: colorchangetexte 0.5s;
+  animation-delay: 0.1s;
+}
+
+#button-download-index:hover .picto {
+  display: none;
+}
+
+#button-download-index:hover .text {
+  opacity: 1;
+  margin-right: 0px;
+}
+
+.text {
+  font-size: 25px;
+  font-family: "Credible-Regular";
+  padding-top: 23px;
+}
+
+#top2 div {
+  display: inline-block;
+}
+
+#left{
+  width: 33%;
+}
+
+#middle{
+  text-align: center;
+  width: 33%;
+}
+
+#right {
+  text-align: right;
+  width: 33%;
+}
+
+#right p{
+  float:right;
+  -webkit-transition:  0.5s;
+  transition:  0.5s;
+}
+
+#right p:hover {
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.element1{
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.element{
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.element img{
+  width: calc( 50vw - 80px ) ;
+  height: calc( 50vh - 80px );
+  padding: 0px;
+  margin: 0px;
+}
+
+.element p, .element img {
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  }
+
+:hover{
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  animation-play-state: paused;
+  }
+
+.element2{
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.element3{
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.element4{
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#derriere, #zonefonte{
+  margin-top:0px!important;
+}
+
+#zonefonte{
+  position: fixed;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#conteneur1, #conteneur2{
+  height: 50vh;
+}
+
+.element1Survol{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/*RESPONSIVE MENU*/
+@media (max-width: 600px) {
+  .menuContainer {
+    margin-left: calc( ( 100vw - 186px ) / 2);
+    right: auto;
+  }
+  #mireMiddleTop{
+    display: none;
+  }
+  .modal-content{
+    width: 65vw;
+    height: 76vh;
+  }
+  #textModal{
+    font-size: 2.6vw;
+    line-height: 3.1vw;
+  }
+  #newsletter{
+    width: 100%;
+    margin-left:0%;
+  }
+}

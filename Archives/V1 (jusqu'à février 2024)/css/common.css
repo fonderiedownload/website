@@ -1,0 +1,439 @@
+/*MIRES ET TRAITS DE COUPE*/
+
+#common-template{
+  width: 100%;
+  height: 100%;
+  z-index: 3000;
+  position: absolute;
+}
+
+#top{
+  position: fixed;
+  width: 100%;
+  height:8vh;
+  display: flex;
+  justify-content: center;
+}
+
+#bottom{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:8vh;
+  text-align: center;
+}
+
+#mireMiddleBottom{
+  position: fixed;
+  width: 25px;
+  bottom: 0px; left: 50%;
+  transform: translate(-50%, 0%);
+  box-sizing: border-box;
+}
+
+#mireMiddleTop{
+  position: fixed;
+  width: 25px;
+  top: 0px; left: 50%;
+  transform: translate(-50%, 0%);
+  box-sizing: border-box;
+}
+
+#mireMiddleLeft{
+  position: fixed;
+  width: 25px;
+  top: 50%; left: 0%;
+  transform: translate(0%, -50%);
+  box-sizing: border-box;
+}
+
+#mireMiddleRight{
+  position: fixed;
+  width: 25px;
+  top: 50%; right: 0px;
+  transform: translate(0%, -50%);
+  box-sizing: border-box;
+}
+
+#mireTopRight{
+  position: fixed;
+  width: 25px;
+  top: 0%; left: 100%;
+  transform: translate(-50%, -30%);
+  box-sizing: border-box;
+}
+
+#coinTopLeft{
+  position: fixed;
+  width: 43px;
+  top: 0%; left: 0%;
+}
+
+#coinTopRight{
+  position: fixed;
+  width: 43px;
+  top: 0%;
+  right: 0%;
+  transform: rotate(90deg);
+}
+
+#coinTopRight{
+  position: fixed;
+  width: 43px;
+  top: 0%;
+  right: 0%;
+  transform: rotate(90deg);
+}
+
+#coinBottomLeft{
+  position: fixed;
+  width: 43px;
+  bottom: 0%;
+  left: 0%;
+  transform: rotate(-90deg);
+}
+
+#coinBottomRight{
+  position: fixed;
+  width: 43px;
+  bottom: 0%;
+  right: 0%;
+  transform: rotate(180deg);
+}
+
+.picto, #button-download-index p {
+    padding-top: 6px;
+}
+
+/*FIN MIRES ET TRAITS DE COUPE*/
+
+/*MENU*/
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.menuContainer{
+  z-index: 3000;
+  position: fixed;
+  right: 80px;
+  height:30px;
+  border: 0px solid black;
+  margin-top: 6px;
+  font-family: 'menu-Regular';
+  font-size: 22px;
+  text-align: center;
+  background-color: white;
+}
+
+.menuEntree{
+  width:30px;
+  height:inherit;
+  display:inline-block;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  margin:0px;
+  padding:0px;
+  background-color: white;
+}
+
+.menuEntreeLast{
+  width:30px;
+  height:inherit;
+  display:inline-block;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  margin:0px;
+  padding:0px;
+  background-color: white;
+}
+
+.menuEntree p, .menuEntreeLast p{
+  width:30px;
+  height:30px;
+    padding-top: 4px;
+}
+
+#actif{
+  background-color: black;
+}
+
+#actif a{
+  color: white;
+}
+
+.menuEntree:hover, .menuEntreeLast:hover, .boutonEnglobe:hover{
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+/*FIN MENU*/
+
+/*MODAL --> FENETRE D'INFOS*/
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 50vw;
+  height: 55vh;
+  overflow: auto;
+  background-color: yellow;
+}
+
+.close-button {
+  float: right;
+  font-size: 2.5vw;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'menu-Regular';
+}
+
+.show-modal {
+  z-index: 10000;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+button.trigger{
+  background-color: white;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 22px;
+}
+
+#logofonderiedownload{
+  width: 76%;
+  margin-left: 12%;
+  margin-top: 3vw;
+  margin-bottom: 3.5vw;
+}
+
+#textModal{
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 2vw;
+  line-height: 2.5vw;
+}
+
+#textModal p{
+  margin-bottom: 3vh;
+}
+
+#textModal a:hover{
+  animation: colorchange-text 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#newsletter{
+  width: 80%;
+  margin-left:10%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 2vw;
+}
+
+#mc_embed_signup{
+  padding-top: 5%;
+}
+
+.required-email{
+  font-family: 'Zara-Regular';
+  display:block;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 7vh;
+  font-size: 2vw;
+  padding-left: 3%;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 0px;
+  transition: all .2s ease-in-out;
+}
+
+.required-email:hover{
+  border-radius: 0px;
+}
+
+.button{
+  margin-top: 7%;
+  background-color: white;
+  color: black;
+  font-family: 'Zara-Regular';
+  border: 0px;
+  margin-bottom: 8%;
+  font-size: 2vw;
+  padding: 2%;
+}
+
+.button:hover{
+  cursor: pointer;
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#ps{
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 10%;
+}
+/*FIN MODAL*/
+
+/*ANIMATIONS*/
+
+@keyframes colorchange{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+@keyframes colorchange-text{
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  75%  {color: green;}
+  100% {color: red;}
+}
+
+/*FIN ANIMATIONS*/
+
+/*BOUTON "DOWNLOAD THE FONT"*/
+
+#button_download{
+  z-index: 3000;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom:43px;
+  right:43px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'menu-Regular';
+  color: black;
+  font-size: 51px;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  transform-origin: center;
+  overflow: hidden;
+
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-duration: 1s;
+  animation-delay: 4s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#button_download:hover {
+  border-radius:0;
+  cursor: pointer;
+  width: 300px;
+  animation: colorchange 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.picto{
+  display: block;
+}
+
+.text {
+  color: black;
+  opacity: 0;
+  text-align: center;
+  padding-top:0px;
+  transition: all 0s linear;
+  transition: margin-right .3s ease-in-out;
+  margin-right: -500px;
+  animation: colorchangetexte 0.5s;
+  animation-delay: 0.1s;
+}
+
+#button_download:hover .picto {
+  display: none;
+}
+
+#button_download:hover .text {
+  opacity: 1;
+  margin-right: 0px;
+}
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+/*FIN BOUTON "DOWNLOAD THE FONT"*/
+
+/*RESPONSIVE*/
+
+#mobile{
+  display: none;
+}
+
+/*FIN RESPONSIVE*/

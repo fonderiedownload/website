@@ -87,7 +87,7 @@ body{
 .text {
   font-size: 25px;
   font-family: "Credible-Regular";
-  padding-top: 23px;
+  padding-top: 23px!important;
 }
 
 #top2 div {
