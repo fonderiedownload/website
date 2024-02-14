@@ -58,6 +58,10 @@ body {
   display: none;
 }
 
+#garamonmobile{
+    display: none;
+}
+
 .info {
   bottom: 43px;
   margin-right: 5vw;
@@ -146,7 +150,19 @@ body {
 }
 
 @media all and (max-device-width: 480px){
-    #txtInfo{
+    #container{
+        margin: 0px;
+        width: calc( 100vw - 86px );
+        padding: 129px 43px 86px 43px;
+        height: auto
+    }
+    #garamonmobile{
+        display: block
+    }
+    #garamonmobile img{
+        width: calc( 100vw - 86px );
+    }
+    #txtInfo, .scene, .loupe{
         display: none
     }
     #txtInfo-mobile {
