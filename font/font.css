@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: 'Quarantype-Regular';
-  src: url('Quarantype-Regular.eot?#iefix') format('embedded-opentype'),  url('Quarantype-Regular.woff') format('woff');
+  src: url('Quarantype-Regular.eot?#iefix') format('embedded-opentype'),  url('Quarantype-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
