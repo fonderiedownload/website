@@ -248,6 +248,6 @@ body{
     }
     @-webkit-keyframes vitesse {
         0%   {top:110vh;}
-        100%  {top:-350vh;}
+        100%  {top:-380vh;}
     }
 }
