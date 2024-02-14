@@ -15,10 +15,6 @@ body{
   -ms-filter: invert(1);
 }
 
-#texteTribalium-mobile{
-    display: none;
-}
-
 /* COURBE */
 
 svg {
@@ -74,7 +70,7 @@ input:focus{
 
 #texteTribalium-mobile{
         display: none;
-    }
+}
 
 @-webkit-keyframes opacity {
   0%   {opacity: 0; }
