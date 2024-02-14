@@ -218,11 +218,6 @@ body{
         width: auto;
         background-color: transparent;
     }
-    #credits{
-        animation: vitesse 45s linear infinite;
-        -moz-animation: vitesse 45s linear infinite;
-        -webkit-animation: vitesse 45s linear infinite;
-    }
     #credits h1{
         font-size:14vw; 
         line-height: 15vw;
@@ -246,8 +241,6 @@ body{
         font-size: 7vw;
         line-height: 8.5vw;
     }
-    @-webkit-keyframes vitesse {
-        0%   {top:110vh;}
-        100%  {top:-350vh;}
-    }
+ 
+
 }
