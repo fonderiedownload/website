@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Zara-Regular';
+  src: url('Zara-Regular.eot?#iefix') format('embedded-opentype'),  url('Zara-Regular.otf')  format('opentype'),
+	     url('Zara-Regular.woff') format('woff'), url('Zara-Regular.ttf')  format('truetype'), url('Zara-Regular.svg#Zara-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zara-Oblique';
+  src: url('Zara-Oblique.eot?#iefix') format('embedded-opentype'),  url('Zara-Oblique.otf')  format('opentype'),
+	     url('Zara-Oblique.woff') format('woff'), url('Zara-Oblique.ttf')  format('truetype'), url('Zara-Oblique.svg#Zara-Oblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tribalium-Regular';
+  src: url('Tribalium-Regular.eot?#iefix') format('embedded-opentype'),  url('Tribalium-Regular.otf')  format('opentype'),
+	     url('Tribalium-Regular.woff') format('woff'), url('Tribalium-Regular.ttf')  format('truetype'), url('Tribalium-Regular.svg#Tribalium-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tribalium-Poster';
+  src: url('Tribalium-Poster.eot?#iefix') format('embedded-opentype'),  url('Tribalium-Poster.otf')  format('opentype'),
+	     url('Tribalium-Poster.woff') format('woff'), url('Tribalium-Poster.ttf')  format('truetype'), url('Tribalium-Poster.svg#Tribalium-Poster') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Credible-Regular';
+  src: url('Credible-Regular.eot?#iefix') format('embedded-opentype'),  url('Credible-Regular.otf')  format('opentype'),
+	     url('Credible-Regular.woff') format('woff'), url('Credible-Regular.ttf')  format('truetype'), url('Credible-Regular.svg#Credible-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'menu-Regular';
+    src: url('menu-regular-webfont.woff2') format('woff2'),
+         url('menu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamondt-Regular';
+  src: url('Garamondt-Regular.eot?#iefix') format('embedded-opentype'),  url('Garamondt-Regular.otf')  format('opentype'),
+	     url('Garamondt-Regular.woff') format('woff'), url('Garamondt-Regular.ttf')  format('truetype'), url('Garamondt-Regular.svg#Garamondt-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamondt-Italic';
+  src: url('Garamondt-Italic.eot?#iefix') format('embedded-opentype'),  url('Garamondt-Italic.otf')  format('opentype'),
+	     url('Garamondt-Italic.woff') format('woff'), url('Garamondt-Italic.ttf')  format('truetype'), url('Garamondt-Italic.svg#Garamondt-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quarantype-Regular';
+  src: url('Quarantype-Regular.eot?#iefix') format('embedded-opentype'),  url('Quarantype-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quarantype-Oblique';
+  src: url('Quarantype-Oblique.eot?#iefix') format('embedded-opentype'), url('Quarantype-Oblique.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TribaliumNeue-Regular';
+  src: url('TribaliumNeue-Regular.eot?#iefix') format('embedded-opentype'),  url('TribaliumNeue-Regular.otf')  format('opentype'),
+	     url('TribaliumNeue-Regular.woff') format('woff'), url('TribaliumNeue-Regular.ttf')  format('truetype'), url('TribaliumNeue-Regular.svg#TribaliumNeue-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TribaliumNeue-Poster';
+  src: url('TribaliumNeue-Poster.eot?#iefix') format('embedded-opentype'),  url('TribaliumNeue-Poster.otf')  format('opentype'),
+	     url('TribaliumNeue-Poster.woff') format('woff'), url('TribaliumNeue-Poster.ttf')  format('truetype'), url('TribaliumNeue-Poster.svg#TribaliumNeue-Poster') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: '4Fromages-Regular';
+    src: url('4-Fromages-Regular.otf') format('opentype'), url('4-Fromages-Regular.woff') format('woff'), url('4-Fromages-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

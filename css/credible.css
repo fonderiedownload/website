@@ -221,34 +221,3 @@ body{
     margin-left:0%;
   }
 }
-
-@media all and (max-device-width: 480px){
-    #grand-perso{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        margin-left: 0vw;
-        padding-top: 0vh;
-        bottom: 0px;
-        padding-bottom: 3vh;
-    }
-    #punchline{
-        padding-top: 18vh;
-    }
-    #punchline div p{
-        font-size: 8vw;
-        line-height: 10.4vw;
-    }
-    #scroll{
-        display: none;
-    }
-    #footer-middle {
-        padding: 43px 43px 0px 43px;
-        margin-bottom: 113px;
-        font-size: 5vw;
-        line-height: 6.2vw;
-    }
-}
