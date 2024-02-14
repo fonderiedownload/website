@@ -339,7 +339,9 @@ outline: none;
 
 @media all and (max-device-width: 480px){
     body{
-        overflow-y: hidden;
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 100vh;
     }
     .contentFont{
         margin-top: 10vh;
