@@ -87,7 +87,11 @@ Special thanks to Romain for his help!!
         </div>
       </div>
       
-      <div class="grid-container">
+      <div class="beast-container">
+          <div class="fourth"><span style="color:#da64ff">∈</span><span style="color:#37ae69">ℹ</span><span style="color:#438fda">!</span><span style="color:#438fda">‹</span><span style="color:#f03202">≡</span></div>
+          <div class="third"><span style="color:#438fda">A</span><span style="color:#da8e37">I</span><span style="color:#37ae69">4</span><span style="color:#f03202">ͱ</span><span style="color:#dce176">ϟ</span></div>
+          <div class="second"><span style="color:#37ae69">?</span><span style="color:#dce176">r</span><span style="color:#f03202">d</span><span style="color:#dce176">ß</span><span style="color:#da64ff">e</span></div>
+          <div class="first">Beast</div>
       </div>
       
       
@@ -148,4 +152,15 @@ Special thanks to Romain for his help!!
 
 
   </script>
+<script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $('.fourth').css('opacity', 0.8);
+    } else {
+      $('.fourth').css('opacity', 1);
+    }
+  });
+});
+</script>
 </html>
