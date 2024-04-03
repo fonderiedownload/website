@@ -22,12 +22,39 @@ body{
   font-size: 35px;
 }
 
-.table-container{
+.table-container1{
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ee3400;
+/*
+  background: linear-gradient(to bottom left, #c06d00 50%, black 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+*/
+}
+
+.table-container2{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  color: #c06d00;
+}
+
+.table-container3{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  color: #06935c;    
+    
 }
 
  table{
@@ -42,16 +69,16 @@ td{
 }
 
 .text-centre{
-    font-size: 3vw;
-    line-height: 3vw;
-    text-align: left;
-    vertical-align: top;
+  font-size: 3vw;
+  line-height: 3vw;
+  text-align: left;
+  vertical-align: top;
 }
 
-.fleche-bas{
-    font-size: 1.6vw;
-    animation: clignote 1s ease 0s infinite normal forwards;
-    vertical-align: bottom
+.fleche-bas, .fleche-bas2{
+  font-size: 1.6vw;
+  animation: clignote 1s ease 0s infinite normal forwards;
+  vertical-align: bottom;
 }
 
 @keyframes clignote {
@@ -62,8 +89,8 @@ td{
   100% { opacity:0; }
 }
 
-.fleche-bas:hover{
-    cursor: pointer
+.fleche-bas, .fleche-bas2:hover{
+  cursor: pointer
 }
 
 /* RESPONSIVE */

@@ -69,7 +69,7 @@ input:focus{
 }
 
 #texteTribalium-mobile{
-        display: none;
+    display: none;
 }
 
 @-webkit-keyframes opacity {
