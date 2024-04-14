@@ -29,6 +29,7 @@ body{
   align-items: center;
   justify-content: center;
   color: #ee3400;
+      transition: all 1s ease-out;
 /*
   background: linear-gradient(to bottom left, #c06d00 50%, black 50%);
   -webkit-background-clip: text;
@@ -54,7 +55,6 @@ body{
   justify-content: center;
   display: none;
   color: #06935c;    
-    
 }
 
  table{
@@ -70,8 +70,12 @@ td{
 
 .text-centre{
   font-size: 3vw;
-  line-height: 3vw;
+  line-height: 3.5vw;
   text-align: left;
+  vertical-align: top;
+}
+
+.input-centre{
   vertical-align: top;
 }
 
@@ -92,6 +96,20 @@ td{
 .fleche-bas, .fleche-bas2:hover{
   cursor: pointer
 }
+
+.try-text{
+  width: 98%;
+  font-family: "Beast-Regular";
+  font-size: 3vw;
+  line-height: 3vw;
+  border: none;
+  outline: none;
+  color: #06935c;
+  resize: none;
+}
+
+
+
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
