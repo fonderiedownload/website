@@ -29,7 +29,7 @@ body{
   align-items: center;
   justify-content: center;
   color: #ee3400;
-      transition: all 1s ease-out;
+  transition: all 1s ease-out;
 /*
   background: linear-gradient(to bottom left, #c06d00 50%, black 50%);
   -webkit-background-clip: text;
@@ -75,6 +75,20 @@ td{
   vertical-align: top;
 }
 
+.text-middle{
+  font-size: 3vw;
+  line-height: 3.5vw;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-right{
+  font-size: 3vw;
+  line-height: 3.5vw;
+  text-align: right;
+  vertical-align: middle;
+}
+
 .input-centre{
   vertical-align: top;
 }
@@ -82,7 +96,8 @@ td{
 .fleche-bas, .fleche-bas2{
   font-size: 1.6vw;
   animation: clignote 1s ease 0s infinite normal forwards;
-  vertical-align: bottom;
+  vertical-align: middle;
+  text-align: right
 }
 
 @keyframes clignote {
