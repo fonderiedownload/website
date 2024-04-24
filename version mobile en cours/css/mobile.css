@@ -13,7 +13,7 @@
     
   .menuContainer {
   top: 43px;
-  margin-left: calc( ( 100vw - 280px ) / 2);
+  margin-left: calc( ( 100vw - 312px ) / 2);
   right: unset;
 }  
     
@@ -130,8 +130,6 @@ h2{
   margin-top: 10px;
 }    
     
-    
-    
 .modal-content {
     width: 65vw;
     height: calc( 100% - 117px );
@@ -174,7 +172,13 @@ h2{
   font-size:3.5vw;
   margin-top:43px;
 }
+    
+/* BOUTTON TELECHARGEMENT */    
 
 #button_download:hover{
     width: calc( 100vw - 86px )!important;
+}
+    
+.text{
+  top: 35%;
 }

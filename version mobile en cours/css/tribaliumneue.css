@@ -317,13 +317,15 @@ input:focus{
         0%   {width:40vw; opacity: 0.2;}
         100%  {width: 90vw; opacity: 1;}
     }
-    @keyframes bounce-mobile 2
+    @keyframes bounce-mobile 2 {
         0%   {width:40vw; opacity: 0.2;}
         100%  {width: 90vw; opacity: 1;}
     }
+    
     #texteTribalium{
-        display: none
+    display: none;
     }
+
     #texteTribalium-mobile{
         display: block;
         width: 100vw;
