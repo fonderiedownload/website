@@ -22,39 +22,21 @@ body{
   font-size: 35px;
 }
 
-.table-container1{
+.table-container1, .table-container2, .table-container3, .table-container4, .table-container5, .table-container6, .table-container7{
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ee3400;
-  transition: all 1s ease-out;
-/*
-  background: linear-gradient(to bottom left, #c06d00 50%, black 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-*/
+  transform: scale(75%);
 }
 
-.table-container2{
+.table-container2, .table-container3, .table-container4, .table-container5, .table-container6, .table-container7{
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  display: none;
-  color: #c06d00;
-}
-
-.table-container3{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
-  color: #06935c;    
 }
 
  table{
@@ -66,25 +48,26 @@ td{
   text-align: center;
   width: 1.25vw;
   font-size: 1.25vw;
+  border: 1px solid transparent;
 }
 
 .text-centre{
-  font-size: 3vw;
-  line-height: 3.5vw;
+  font-size: 2.5vw;
+  line-height: 3vw;
   text-align: left;
   vertical-align: top;
 }
 
 .text-middle{
-  font-size: 3vw;
-  line-height: 3.5vw;
+  font-size: 2.5vw;
+  line-height: 3vw;
   text-align: center;
   vertical-align: middle;
 }
 
 .text-right{
-  font-size: 3vw;
-  line-height: 3.5vw;
+  font-size: 2.5vw;
+  line-height: 3vw;
   text-align: right;
   vertical-align: middle;
 }
@@ -93,7 +76,7 @@ td{
   vertical-align: top;
 }
 
-.fleche-bas, .fleche-bas2{
+.fleche-bas, .fleche-bas2, .fleche-bas3, .fleche-bas4, .fleche-bas5, .fleche-bas6{
   font-size: 1.6vw;
   animation: clignote 1s ease 0s infinite normal forwards;
   vertical-align: middle;
@@ -108,22 +91,26 @@ td{
   100% { opacity:0; }
 }
 
-.fleche-bas, .fleche-bas2:hover{
+.fleche-bas, .fleche-bas2, .fleche-bas3, .fleche-bas4, .fleche-bas5, .fleche-bas6:hover{
   cursor: pointer
+}
+
+.img-ecran-jeu{
+  width:34vw;
+  float=left;
+  shape-outside: content-box"    
 }
 
 .try-text{
   width: 98%;
   font-family: "Beast-Regular";
-  font-size: 3vw;
+  font-size: 2.5vw;
   line-height: 3vw;
   border: none;
   outline: none;
   color: #06935c;
   resize: none;
 }
-
-
 
 
 /* RESPONSIVE */
