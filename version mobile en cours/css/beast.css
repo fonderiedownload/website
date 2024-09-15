@@ -64,6 +64,10 @@ td{
   vertical-align: middle;
 }
 
+.text-table{
+  vertical-align: middle;
+}
+
 .text-right{
   font-size: 2.5vw;
   line-height: 3vw;
@@ -102,12 +106,13 @@ td{
 
 .try-text{
   width: 98%;
+  padding: 0px;
+  margin-right: 2%;
   font-family: "Beast-Regular";
   font-size: 2.5vw;
   line-height: 3vw;
   border: none;
   outline: none;
-  color: #06935c;
   resize: none;
 }
 
@@ -129,6 +134,39 @@ td{
 
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+.table-container1{
+    animation: animTC1 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes animTC1 {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(75%);
+	}
+}
+
+
+.table-container2, .table-container3, .table-container4, .table-container5, .table-container6, .table-container7{
+    animation: animTC 0.25s ease 0s 1 normal forwards;
+}
+
+@keyframes animTC {
+	0% {
+		transform: scale(0.75);
+	}
+
+	50% {
+		transform: scale(0.85);
+	}
+
+	100% {
+		transform: scale(0.75);
 	}
 }
 
