@@ -52,7 +52,6 @@ td{
 
 .text-centre{
   font-size: 2.5vw;
-  line-height: 3vw;
   text-align: left;
   vertical-align: top;
 }
@@ -169,6 +168,40 @@ td{
 		transform: scale(0.75);
 	}
 }
+
+
+/*
+.table-container2 .text-centre, .table-container3 .text-centre, .table-container4 .text-centre, .table-container5 .text-centre, .table-container6 .text-centre, .text-middle, .text-right, .try-text{
+    animation: fading 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fading {
+	0% {
+		opacity:0;
+	}
+
+	100% {
+		opacity:1;
+	}
+}
+
+*/
+
+
+.animate-text { 
+	visibility:hidden;
+}
+
+
+
+
+.table-container5 a:hover{
+  animation: colorchange-text 0.5s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
 
 
 /* RESPONSIVE */
