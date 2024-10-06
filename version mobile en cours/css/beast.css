@@ -75,6 +75,11 @@ td{
   vertical-align: middle;
 }
 
+.version{
+  font-size: 2vw;
+  vertical-align: bottom;
+}
+
 .input-centre{
   vertical-align: top;
 }
@@ -122,7 +127,7 @@ td{
 
 .anim-ecran1 div{
     animation: anim-tourne 2s  infinite normal forwards;
-    font-size: 50px;
+    font-size: 4.5vw;
     transform-origin: center;
     margin-top: 3.5vh;
 }
@@ -171,38 +176,15 @@ td{
 }
 
 
-/*
-.table-container2 .text-centre, .table-container3 .text-centre, .table-container4 .text-centre, .table-container5 .text-centre, .table-container6 .text-centre, .text-middle, .text-right, .try-text{
-    animation: fading 1s ease 0s 1 normal forwards;
-}
-
-@keyframes fading {
-	0% {
-		opacity:0;
-	}
-
-	100% {
-		opacity:1;
-	}
-}
-
-*/
-
-
 .animate-text { 
 	visibility:hidden;
 }
-
-
-
 
 .table-container5 a:hover{
   animation: colorchange-text 0.5s;
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: infinite;
 }
-
-
 
 
 /* RESPONSIVE */
@@ -248,4 +230,25 @@ td{
     width: 100%;
     margin-left:0%;
   }
+}
+
+@media all and (max-device-width: 480px){
+
+.table-container1, .table-container2, .table-container3, .table-container4, .table-container5, .table-container6, .table-container7{
+  transform: scale(100%);
+}
+    table{
+        transform: scale(2);
+    }    
+
+    .anim-ecran1 div {
+  margin-top: 1.5vh;
+}
+    
+    .version{
+  font-size: 2vw;
+    }
+    
+    
+    
 }
