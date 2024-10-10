@@ -237,9 +237,7 @@ td{
 .table-container1, .table-container2, .table-container3, .table-container4, .table-container5, .table-container6, .table-container7{
   transform: scale(100%);
 }
-    table{
-        transform: scale(2);
-    }    
+      
 
     .anim-ecran1 div {
   margin-top: 1.5vh;
