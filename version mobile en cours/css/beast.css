@@ -60,7 +60,7 @@ td{
 .text-middle{
   font-size: 2.5vw;
   line-height: 3vw;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
 }
 
@@ -71,7 +71,7 @@ td{
 .text-right{
   font-size: 2.5vw;
   line-height: 3vw;
-  text-align: right;
+  text-align: left;
   vertical-align: middle;
 }
 
@@ -175,7 +175,6 @@ td{
 	}
 }
 
-
 .animate-text { 
 	visibility:hidden;
 }
@@ -184,6 +183,52 @@ td{
   animation: colorchange-text 0.5s;
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: infinite;
+}
+
+/* Animation pour le compteur */
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.score-1502 {
+  animation: counter1502 normal 4s ease-in-out forwards;
+  counter-reset: num var(--num);
+  animation-delay: 0.5s;
+}
+
+.score-1502::after {
+  content: counter(num);
+}
+
+@keyframes counter1502 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 1502;
+  }
+}
+
+/* Animation pour le score 333 */
+.score-333 {
+  animation: counter333 normal 2s ease-in-out forwards;
+  counter-reset: num var(--num);
+  animation-delay: 0.75s;
+}
+
+.score-333::after {
+  content: counter(num);
+}
+
+@keyframes counter333 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 333;
+  }
 }
 
 
