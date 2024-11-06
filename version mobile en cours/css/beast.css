@@ -283,19 +283,29 @@ td{
         transform: scale(1.3);
 }
 */
-    td {
-
-  font-size: 3vw;
-    }
-
-    .anim-ecran1 div {
-  margin-top: 1.5vh;
+td{
+    font-size: 2.5vw;
 }
     
-    .version{
-  font-size: 2vw;
-    }
+titre beast {
+  font-size: 20vw;    
+}
     
+.anim-ecran1 div{
+  font-size: 9.5vw; 
+}
     
+.version{
+  font-size: 5vw;
+}
+    
+.fleche-bas, .fleche-bas2, .fleche-bas3, .fleche-bas4, .fleche-bas5, .fleche-bas6{
+  font-size: 5vw;    
+}
+
+.text-centre{
+  font-size: 5.75vw;
+  line-height: 6.75vw;
+}
     
 }
