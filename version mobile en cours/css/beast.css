@@ -294,7 +294,7 @@ td{
 }
     
 .titre-beast {
-  font-size: 20vw;    
+  font-size: 17vw;    
 }
     
 .anim-ecran1 div{
@@ -316,6 +316,8 @@ td{
 .text-centre, .text-middle, .text-right, .try-text{
   font-size: 5vw;
   line-height: 6vw;
+  padding-top: 1px;
 }
     
+
 }
