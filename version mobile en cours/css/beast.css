@@ -279,10 +279,14 @@ td{
 
 @media all and (max-device-width: 480px){
 
-.table-container1, .table-container2, .table-container3, .table-container4, .table-container5, .table-container6, .table-container7{
+/*.table-container1, .table-container2, .table-container3, .table-container4, .table-container5, .table-container6, .table-container7{
         transform: scale(1.3);
 }
+*/
+    td {
 
+  font-size: 3vw;
+    }
 
     .anim-ecran1 div {
   margin-top: 1.5vh;
