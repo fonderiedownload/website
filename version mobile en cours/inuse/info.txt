@@ -69,14 +69,14 @@
 069.jpg: Tribalium ; Les Cheveux mouillés ; Andréas Camps
 070.jpg: Tribalium ; Les Cheveux mouillés ; Andréas Camps
 071.jpg: Crédible ; Coraline ; WhiteWalka Beats
-072.jpg: Tribalium ; A concert at Pracht in Leipzig ; Carla Selva Matthes
+072.jpg: Tribalium Garamon(d/t) ; A concert at Pracht in Leipzig ; Carla Selva Matthes
 073.jpg: Garamon(d/t) ; MONUMENTA MORI - Création textuelle ; erg
 074.jpg: Garamon(d/t) ; Mariachi / Ursatz / Elvin Brandhi ; Collectif La Méandre
 075.jpg: Garamon(d/t) ; Subjunctive Porosity ; Xuanjie Huang
-076.jpg: Quarantype ; Subjunctive Porosity ; Xuanjie Huang
+076.jpg: Quarantype Garamon(d/t) ; Subjunctive Porosity ; Xuanjie Huang
 077.jpg: Garamon(d/t) ; Un Fanzine par Mois ; Jules Tirilly
 078.jpg: Garamon(d/t) ; Le bestiaire de Guillaume Apollinaire ; Teddy Chantharath
-079.jpg: Garamon(d/t) ; XPUB Special Issue 15 - Radio Implicancies ; 2021 XPUB master's students
+079.jpg: Crédible Garamon(d/t) ; XPUB Special Issue 15 - Radio Implicancies ; 2021 XPUB master's students
 080.jpg: Tribalium ; Carly Zeng - Mini Asia Tour ; Studio Cryo
 081.jpg: Garamon(d/t) ; Venezia Fabrica Futura - An eco-critical lab ; Stefano Dealessandri
 082.jpg: Garamon(d/t) ; Venezia Fabrica Futura - An eco-critical lab ; Stefano Dealessandri
@@ -86,3 +86,16 @@
 086.jpg: Crédible ; Paris cortège travailleureuses de l'art ; Syndicat National des Artistes Plasticien·nes de la CGT
 087.jpg: Crédible ; Isengard party at Brasserie Illegal ; Édouard Nazé
 088.jpg: 4 fromages ; Jadey ; Charley McDermott-Edwards
+089.jpg: 4 fromages ; MetroGoldia ; MetroGoldia
+090.jpg: Crédible ; Napoli - photo book by Vincen Beeckman ; Lien Van Leemput
+091.jpg: Zara ; Leaflet for Kristof Van Gestel ; Lien Van Leemput
+092.jpg: Zara ; Leaflet for Kristof Van Gestel ; Lien Van Leemput
+093.jpg: Tribalium ; 3AM voice notes ; 3AM voice notes
+094.jpg: Crédible ; Cringe Académie - Léopold Bensaid ; L'Articho éditions
+095.jpg: Crédible ; Hoera concert at Het Bos Antwerpen ; Victor Verhelst 
+095.jpg: Crédible Garamon(d/t) ; Hoera concert at Het Bos Antwerpen ; Victor Verhelst
+096.jpg: Crédible ; (Social) Fermentation ; Andromachi Theodoridou, Sarah Traub and Kirsten Humpfer
+097.jpg: Garamon(d/t) ; (Social) Fermentation ; Andromachi Theodoridou, Sarah Traub and Kirsten Humpfer 
+098.jpg: Garamon(d/t) ; (Social) Fermentation ; Andromachi Theodoridou, Sarah Traub and Kirsten Humpfer
+099.jpg: Zara ; Exercices de storyboard ; Maurice Nyssen
+100.jpg: Zara ; Exercices de storyboard ; Maurice Nyssen

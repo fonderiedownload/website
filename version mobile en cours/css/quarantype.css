@@ -42,7 +42,7 @@ body{
   position: fixed;
   top: 86px;
   width: 35vw;
-  animation:sticker3 8s linear infinite;
+  animation:sticker1 8s linear infinite;
 }
 
 #sticker4{
@@ -63,11 +63,25 @@ body{
   animation:sticker2 7s linear infinite;
 }
 
-keyframes sticker1 { 100% { -webkit-transform: rotate(360deg); } }
 
-keyframes sticker2 { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes sticker1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-keyframes sticker3 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes sticker2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 
 #container{
   text-align: center;
