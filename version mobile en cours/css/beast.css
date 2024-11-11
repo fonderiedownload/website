@@ -202,22 +202,22 @@ td{
   inherits: false;
 }
 
-.score-1502 {
-  animation: counter1502 normal 4s ease-in-out forwards;
+.score-1512 {
+  animation: counter1512 normal 4s ease-in-out forwards;
   counter-reset: num var(--num);
   animation-delay: 0.5s;
 }
 
-.score-1502::after {
+.score-1512::after {
   content: counter(num);
 }
 
-@keyframes counter1502 {
+@keyframes counter1512 {
   from {
     --num: 0;
   }
   to {
-    --num: 1502;
+    --num: 1512;
   }
 }
 
@@ -241,6 +241,9 @@ td{
   }
 }
 
+.table1, .table2, .table3, .table4, .table5, .table6:hover{
+    cursor: pointer
+}
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
