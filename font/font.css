@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: 'Quarantype-Regular';
-  src: url('Quarantype-Regular.eot?#iefix') format('embedded-opentype'),  url('Quarantype-Regular.woff2') format('woff2');
+  src: url('Quarantype-Regular.eot?#iefix') format('embedded-opentype'),  url('Quarantype-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -95,6 +95,13 @@
 @font-face {
     font-family: '4Fromages-Regular';
     src: url('4-Fromages-Regular.otf') format('opentype'), url('4-Fromages-Regular.woff') format('woff'), url('4-Fromages-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beast-Regular';
+    src: url('Beast-Regular.woff2') format('woff2') ;
     font-weight: normal;
     font-style: normal;
 }
