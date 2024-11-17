@@ -299,15 +299,8 @@ body{
 @media all and (max-device-width: 480px)
 {
 
-#mireMiddleTop{
-    display: none;
-  }
 
-.menuContainer {
-  top: 43px;
-  margin-left: calc( ( 100vw - 280px ) / 2);
-  right: unset;
-}
+
 
 #textheader {
     padding-top: 129px;
@@ -332,9 +325,6 @@ body{
     margin-top: 0px;
 }
 
-#mobile{
-  display: block;
-}
 
 body{
   width: 100%;
@@ -342,114 +332,7 @@ body{
   line-height: normal;
 }
 
-#logofonderiedownload{
-  width: calc( 100vw - 86px );
-  margin-left: 43px;
-  margin-top: 52px;
-}
 
-#about{
-  margin-bottom: 86px;
-}
-
-h1{
-  font-weight: normal;
-  text-align: center;
-  font-size: 8vw;
-  border: 1px solid black;
-  border-radius: 600px;
-  background-color: white;
-  padding: 3%;
-  width: 25%;
-  margin: auto;
-  margin-top: 17vh;
-}
-
-.show, .show2{
-  display: none;
-}
-
-#textModal{
-  margin: 43px;
-  font-size: 5.4vw;
-  line-height: 7.2vw;
-  padding-left: 0%;
-  padding-right: 0%;
-}
-
-#textModal p {
-  margin-bottom: 15px;
-}
-
-#newsletter{
-  width: calc( 100vw - 84px );
-  margin-left: 42px;
-  margin-bottom: 43px;
-}
-
-.mc-field-group{
-  margin-top: 1vh;
-}
-
-.mc-field-group label{
-  font-size: 5vw;
-  margin-top: 2%;
-}
-
-.required-email{
-  width: 90%;
-  margin-left: 5%;
-  font-size: 5vw;
-  margin-top: 8%;
-  height: 50px!important;
-  border-radius: 0px;
-}
-
-.title{
-  height: auto;
-  margin-top: 80px;
-}
-
-.button{
-  font-size: 8vw;
-  border: 1px solid black;
-  border-radius: 600px;
-  background-color: white;
-  padding: 3%;
-  width: 62%;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-h2{
-  display: inline-block;
-  margin-top: 0px;
-}
-
-.show2 h2{
-  margin-left: 43px;
-  font-weight: normal;
-  font-size: 8vw;
-  margin-bottom: 2vh;
-}
-
-.show2 input{
-  width: calc( 100vw - 84px );
-  margin-left: 42px;
-  height: 70px;
-  font-size: 9vw!important;
-  padding: 3%;
-  box-sizing: border-box;
-  border: 1px solid black;
-}
-
-.show2 input:last-child{
-  margin-top: 2vh!important;
-}
-
-.firstInput{
-  margin-top: 10px;
-}
 
 #credible{
   font-family: 'Credible-Regular';
@@ -509,47 +392,3 @@ h2{
   -webkit-animation-iteration-count: infinite;
 }
 
-/* MODAL VERSION MOBILE */
-
-.modal-content {
-    width: 65vw;
-    height: calc( 100% - 117px );
-}
-
-.close-button {
-    font-size: 8.5vw;
-}
-
-#logofonderiedownload{
-  width: 100%;
-  margin: 0px;
-  margin-top: 30px;
-}
-
-#textModal{
-  margin: 43px 0px 0px 0px;
-  font-size: 4.5vw;
-  line-height: 6vw;
-}
-
-#textModal p span{
-  font-size: 3.5vw;
-}
-
-#newsletter{
-  width: 100%;
-  margin: 43px 0px 0px 0px;
-}
-
-.mc-field-group label {
-    font-size: 4.5vw;
-}
-
-.button {
-    font-size: 6vw;
-}
-
-#ps{
-  font-size:2.9vw;
-  margin-top:43px;
-}

@@ -237,4 +237,19 @@ right: 30px;
   }
 }
 
+@media all and (max-device-width: 480px){
+    #mobile{
+        display: none
+    }
+    #container {
+        padding-top: 18vh;
+    }
+    #wrap-cube {
+        top: 40%;
+    }
+    #saveur {
+        width: 50px;
+        bottom: 5px;
+        right: 5px;
+    }
 }
